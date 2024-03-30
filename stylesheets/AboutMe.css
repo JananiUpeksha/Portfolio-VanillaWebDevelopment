@@ -1,0 +1,141 @@
+/* Resetting default margin and overflow */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Styling the aboutMe section */
+.aboutMe {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FBF5FF;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling the "Who am I" paragraph */
+#who > p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    width: 250px;
+    height: 50px;
+    margin-top: 100px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 38px;
+    color:  #CC00FF;
+}
+
+/* Styling the first paragraph */
+#first {
+    position: absolute;
+    top: 100px;
+    margin-left: 50px;
+    width: 1800px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 36px;
+    color: #6F5D85;
+}
+
+/* Styling the second paragraph */
+#second {
+    position: absolute;
+    top: 320px;
+    margin-left: 50px;
+    width: 1800px;
+    height: 180px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #7F8487;
+}
+
+/* Styling the "Hi! I am Janani Upeksha" paragraph */
+#hi > p {
+    position: absolute;
+    top: 550px;
+    margin-left: 50px;
+    width: 450px;
+    height: 40px;
+    left: 800px;
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #6F5D85;
+}
+
+/* Styling the "Follow Me" paragraph */
+#follow > p {
+    position: absolute;
+    top: 600px;
+    margin-left: 50px;
+    width: 250px;
+    height: 50px;
+    left: 800px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    color: #7F8487;
+}
+
+/* Styling the social icons container */
+#social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 650px;
+    height: 100px;
+    margin-top: 700px;
+    margin-left: 850px;
+}
+
+/* Styling individual social icon containers */
+#social-icons div {
+    display: flex;
+    align-items: center;
+    padding: 60px;
+}
+
+/* Styling the social icon images */
+#social-icons img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+/* Styling the social icon text */
+#social-icons p {
+    margin: 0;
+    font-size: 18px;
+    padding-left: 10px;
+    color: #CC00FF;
+}
+
+/* Styling the photo container */
+#photo-container {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    margin-left: 210px;
+}
+
+/* Styling the photo */
+#photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
