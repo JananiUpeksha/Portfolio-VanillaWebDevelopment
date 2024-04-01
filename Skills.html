@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="Janani Upeksha">
+    <meta name="author" content="Janani Upeksha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janani Upeksha</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Madimi+One&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .skills{
+            width: 100vw;
+            height: 100vh;
+
+        }
+        #myskills{
+            margin-top: 60px;
+            font-size: 32px;
+            margin-left: 900px;
+            color: #CC00FF;
+        }
+        #expertise{
+            margin-top:10px;
+            font-size: 28px;
+            margin-left: 850px;
+            color: #6F5D85;
+        }
+
+        .progress-bar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-template-rows: repeat(3, auto); /* 3 rows */
+            grid-gap: 20px; /* Gap between grid items */
+            margin-left: 125px;
+            margin-top: 50px; /* Adjust margin-top as needed */
+            position: relative; /* Add this line */
+            border-radius: 10px;
+        }
+
+        .progress-bar > .progress {
+            position: relative;
+
+        }
+
+        .progress-bar > .progress progress {
+            width: 80%;
+            height: 20px;
+            appearance: none;
+            -webkit-appearance: none;
+            border: none;
+            border-radius: 10px;
+            animation: progressAnimation 2s forwards;
+
+        }
+        .progress-bar > .progress progress::-webkit-progress-value {
+            border-radius: 10px;
+            background-color: #CC00FF; /* Set the background color to purple */
+        }
+
+        .circle_div {
+            width: 100vw;
+            height: 300px;
+            position: absolute;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .progress-circle {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .progress-circle > p {
+            left: 50%;
+            transform: translateX(-50%);
+            top: -50px;
+            position: absolute;
+            margin: 0;
+        }
+
+        .outer {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+            inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+            0.5px 0.5px 0px rgba(255, 255, 255, 1),
+            0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+            0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+        }
+
+        #num {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+        circle {
+            fill: none;
+            stroke: #CC00FF;
+            stroke-width: 20px;
+            stroke-dasharray: 565; /* Circumference of the circle */
+            stroke-dashoffset: 565; /* Start with full circle */
+            animation: circle 2s linear forwards;
+        }
+
+        svg {
+            position: absolute;
+        }
+
+        @keyframes progressAnimation {
+            0% { width: 0; }
+        }
+
+        @keyframes circle {
+            to {
+                stroke-dashoffset: var(--offset); /* Move the stroke-dash based on percentage */
+            }
+        }
+
+    </style>
+</head>
+<body>
+<section class="skills">
+    <div id="myskills">My Skills</div>
+    <div id="expertise">My Expertise Area</div>
+
+    <div class="progress-bar">
+        <div class="progress">
+            <p>Java</p>
+            <progress value="80" max="100"></progress>
+
+        </div>
+        <div class="progress">
+            <p>HTML</p>
+            <progress value="95" id="as" max="100"></progress>
+        </div>
+        <div class="progress">
+            <p>CSS</p>
+            <progress value="90" max="100"></progress>
+
+        </div>
+        <div class="progress">
+            <p>SQL</p>
+            <progress value="85" max="100"></progress>
+        </div>
+        <div class="progress">
+            <p>JavaScript</p>
+            <progress value="90" max="100"></progress>
+        </div>
+        <div class="progress">
+            <p>Git</p>
+            <progress value="90" max="100"></progress>
+        </div>
+    </div>
+
+    <div class="circle_div">
+        <div class="progress-circle">
+            <p>Communication</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 65%;">65%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress-circle">
+            <p>Collaboration</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 80%;">80%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress-circle">
+            <p>Teamwork</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 75%;">75%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress-circle">
+            <p>Leadership</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 90%;">90%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Update stroke-dashoffset for each progress circle
+    document.querySelectorAll('.progress-circle').forEach(function(circle) {
+        var percentage = circle.querySelector('#num').style.getPropertyValue('--percentage');
+        var circumference = 565; // Circumference of the circle
+        var offset = circumference - (circumference * parseInt(percentage) / 100);
+        circle.querySelector('circle').style.setProperty('--offset', offset);
+    });
+</script>
+
+</body>
+</html>

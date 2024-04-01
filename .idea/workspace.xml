@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,6 +41,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "css",
     "last_opened_file_path": "/home/janani/IdeaProjects/my-profile/assets",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,6 +76,7 @@
       <workItem from="1711350989226" duration="4188000" />
       <workItem from="1711376635333" duration="893000" />
       <workItem from="1711780315372" duration="470000" />
+      <workItem from="1711788779567" duration="1062000" />
     </task>
     <servers />
   </component>
