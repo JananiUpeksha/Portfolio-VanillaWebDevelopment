@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio">
+  <meta name="keywords" content="Janani Upeksha">
+  <meta name="author" content="Janani Upeksha">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janani Upeksha</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .contact {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    #contactme{
+      margin-top: 40px;
+      margin-left: 850px;
+      font-size: 32px;
+      color: #CC00FF;
+    }
+    #help{
+      font-size: 28px;
+      margin-left: 750px;
+      margin-bottom: 30px;
+      color: #6F5D85;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+      grid-gap: 20px;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .rectangle {
+      position: relative;
+      width: 350px;
+      height: 130px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      background-color: #FBF5FF;
+      color: #7F8487;
+    }
+
+    .rectangle > p {
+      margin: 0;
+      text-align: center;
+    }
+
+    .img-circle {
+      position: absolute;
+      left: -40px; /* Adjust this value to move the image circle more towards the left */
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FBF5FF;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    }
+
+    .img-circle img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    footer {
+      background-color: #FBF5FF;
+      color: #7F8487;
+      padding: 50px;
+      text-align: center;
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      height: 20px;
+      display: flex; /* Use flexbox */
+      flex-direction: column; /* Align items vertically */
+      justify-content: center; /* Center items vertically */
+    }
+
+    footer div {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    footer img {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    footer .inline-content {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    footer p {
+      margin: 0 0 0 10px;
+    }
+
+    #end {
+      margin-top: 5px;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .images-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    /* Adjusted margin for the container */
+    #details-container {
+      margin-top: 100px;
+      margin-left: 350px;
+      margin-right: 350px;
+    }
+    #details input {
+      width: calc(100% - 25px); /* Adjust the width to fit within the grid area */
+      padding: 8px; /* Add padding */
+      margin-top: 5px; /* Add top margin */
+      box-sizing: border-box; /* Include padding and border in the element's total width and height */
+      background-color: #FBF5FF;
+      border: #FBF5FF;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    #details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      grid-gap: 10px; /* Reduced the gap to 10px */
+    }
+
+    #details div {
+      grid-column: span 1;
+      margin: 0; /* Remove any margins */
+      padding: 0; /* Remove any padding */
+    }
+
+    #first-name {
+      margin-top: 10px;
+    }
+
+    #second-name {
+      margin-top: 10px;
+    }
+
+    #message {
+      margin-top: 5px;
+      grid-column: span 3;
+      background-color: #FBF5FF;
+      border: #FBF5FF;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    #email {
+      grid-column: 1 / span 2; /* Make the email input span across two columns */
+      margin-top: 5px;
+    }
+
+    #send-btn {
+      grid-row: 2; /* Place the button in the second row */
+      grid-column: 3; /* Place the button in the third column */
+      width: 100%; /* Make the button width 100% */
+      margin-top: 10px; /* Add some top margin */
+      padding: 10px; /* Add padding */
+      font-size: 16px; /* Adjust font size */
+      border-radius: 10px;
+      border: #CC00FF;
+      background-color: #CC00FF;;
+      color: snow;
+    }
+
+  </style>
+</head>
+<body>
+<!----------Contact Me---------->
+<section class="contact">
+  <div id="contactme">Contact Me</div>
+  <div id="help">How can I help your Next Project</div>
+
+  <div id="grid">
+    <div class="rectangle">
+      <div class="img-circle">
+        <img src="assets/webd.png" alt="Web Design & Development">
+      </div>
+      <p>Web Design & Development</p>
+    </div>
+    <div class="rectangle">
+      <div class="img-circle">
+        <img src="assets/be.png" alt="BackEnd Development">
+      </div>
+      <p>BackEnd Development</p>
+    </div>
+    <div class="rectangle">
+      <div class="img-circle">
+        <img src="assets/icons8-html-5-48.png" alt="FrontEnd Development">
+      </div>
+      <p>FrontEnd Development</p>
+    </div>
+    <div class="rectangle">
+      <div class="img-circle">
+        <img src="assets/ui.png" alt="UI/UX Designing">
+      </div>
+      <p>UI/UX Designing</p>
+    </div>
+  </div>
+  <!-- Wrapping #details inside another container -->
+  <div id="details-container">
+    <div id="details">
+      <div>
+        <label for="first-name">First Name</label><br>
+        <input type="text" id="first-name">
+      </div>
+      <div>
+        <label for="second-name">Second Name</label><br>
+        <input type="text" id="second-name">
+      </div>
+      <div id="msg">
+        <label for="message">Message</label><br>
+        <textarea id="message" rows="8" cols="60"></textarea>
+      </div>
+      <div>
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email">
+      </div>
+      <div>
+        <label for="email">Contact No</label><br>
+        <input type="email" id="no">
+      </div>
+      <button id="send-btn">Send It</button>
+    </div>
+  </div>
+  <!------------Footer---------->
+  <footer>
+    <div class="images-container">
+      <div id="location" class="inline-content">
+        <img src="assets/Location.png" title="Location" alt="Location">
+        <p>270,IhalaBiyanwila,Kadawatha</p>
+      </div>
+      <div id="mail" class="inline-content">
+        <img src="assets/Mail.png" title="Mail" alt="Mail">
+        <p>upekshakeshani@gmail.com</p>
+      </div>
+      <div id="contact" class="inline-content">
+        <img src="assets/Phone.png" title="Contact" alt="Contact">
+        <p>0774662870</p>
+      </div>
+    </div>
+    <div id="end">
+      &copy; All Rights Reserved. Presented by Janani Upeksha
+    </div>
+  </footer>
+</section>
+
+</body>
+</html>
