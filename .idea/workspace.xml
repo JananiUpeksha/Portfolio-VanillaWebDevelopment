@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c9bb906-6609-45cc-a1ce-bddacd1e9bf6" name="Changes" comment="" />
+    <list default="true" id="9c9bb906-6609-45cc-a1ce-bddacd1e9bf6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/stylesheets/Contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,7 +45,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;css&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/janani/IdeaProjects/my-profile/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/janani/Downloads/its1119-gdse67-css--master&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -79,6 +84,10 @@
       <workItem from="1711788779567" duration="1062000" />
       <workItem from="1711971115425" duration="280000" />
       <workItem from="1712044389580" duration="2352000" />
+      <workItem from="1712245635707" duration="2154000" />
+      <workItem from="1712284741934" duration="2017000" />
+      <workItem from="1712434641093" duration="1355000" />
+      <workItem from="1712647041053" duration="1477000" />
     </task>
     <servers />
   </component>

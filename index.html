@@ -23,309 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=BioRhyme:wght@200..800&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Madimi+One&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/Contact.css">
     <style>
-
-        /*---------------------------Home Page---------------------------------------*/
-        header{
-            position: relative;
-            width: 100vw;
-            height: 70px;
-        }
-        header>section>nav{
-            position: absolute;
-            right: 10px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            height: fit-content;
-
-        }
-        header>section>nav>ul{
-            padding: 0;
-            margin: 0;
-        }
-        header>section>nav>ul>li{
-            display: inline-block;
-            /*padding-left: 5px;*/
-            /*padding-right: 5px;*/
-            margin-right: 50px;
-            font-size: 20px;
-        }
-        header>section>nav>ul>li>a {
-            color: rgb(80, 80, 80); /* Change font color to gray */
-            text-decoration: none; /* Remove underline from links */
-        }
-        header>section>nav>ul>li>a:hover {
-            color: black; /* Change font color to black on hover */
-        }
-
-        #logo {
-            position: absolute;
-            top: 20px; /* Adjust the top position as needed */
-            left: 30px; /* Adjust the left position as needed */
-        }
-
-        #logo img {
-            width: 80px;
-            height: 80px;
-        }
-        .pdetails>img{
-            position: absolute;
-            top: 120px; /* Adjust the top position as needed */
-            right: 100px; /* Adjust the distance from the right side */
-            width: auto; /* Maintain aspect ratio */
-            height: 600px;
-
-        }
-        #hello{
-            padding-top: 150px;
-            padding-bottom: 20px;
-            font-family: "Gotu", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 30px;
-            margin-left: 50px;
-            color: rgb(128, 128, 128);
-
-        }
-        #iam{
-
-            font-family: "Libre Baskerville", serif;
-            font-weight: 300;
-            font-style: normal;
-            font-size: 36px;
-            margin-left: 50px;
-            color: #6F5D85;
-        }
-        #fsd{
-            /*margin-top: 50px;*/
-            font-family: "Libre Baskerville", serif;
-            font-weight: 300;
-            font-style: normal;
-            font-size: 38px;
-            margin-left: 50px;
-            color: #6F5D85;
-        }
-        #janani{
-            font-family: "Libre Baskerville", serif;
-            font-weight: 1000;
-            font-style: normal;
-            font-size: 42px;
-            margin-left: 30px;
-            color: #6F5D85;
-        }
-        #homeP{
-            padding-top: 40px;
-            font-family: "Averia Serif Libre", serif;
-            font-weight: 200;
-            font-style: normal;
-            font-size: 30px;
-            color: rgb(128, 128, 128);
-        }
-        #homePcontainer{
-            width: 1000px;
-            height: 200px;
-            margin-left: 40px;
-            margin-bottom: 60px;
-
-
-        }
-        #download{
-            padding: 10px;
-            border-radius: 10px;
-            width: 200px;
-            margin-left: 40px;
-            font-family: "BioRhyme", serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-            font-variation-settings:
-                    "wdth" 100;
-            background-color: #CC00FF;
-            font-size: 18px;
-            color: white;
-
-
-        }
-        #download:hover{
-            background-color: white;
-            color: #CC00FF;
-            border: 3px solid #CC00FF;
-            cursor: pointer;
-        }
-        #hireme:hover{
-            background-color: white;
-            color: #CC00FF;
-            border: 3px solid #CC00FF;
-            cursor: pointer;
-        }
-        #hireme{
-            padding: 10px;
-            width: 200px;
-            border-radius: 10px;
-            margin-left: 20px;
-            font-family: "BioRhyme", serif;
-            font-optical-sizing: auto;
-            font-weight:700;
-            font-style: normal;
-            font-variation-settings:
-                    "wdth" 100;
-            background-color: #CC00FF;
-            font-size: 18px;
-            color: white;
-
-        }
-
-        .pdetails{
-            position: relative;
-        }
-        .home{
-            width: 100vw;
-            height: 100vh;
-
-        }
-        <!----------------------------------------------------------------------->
-                /* Resetting default margin and overflow */
-            body {
-                margin: 0;
-                overflow: hidden;
-            }
-
-        /* Styling the aboutMe section */
-        .aboutMe {
-            width: 100vw;
-            height: 100vh;
-            background-color: #FBF5FF;
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Styling the "Who am I" paragraph */
-        #who > p {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin-left: 50px;
-            width: 250px;
-            height: 50px;
-            margin-top: 100px;
-            font-family: "Libre Baskerville", serif;
-            font-weight: 300;
-            font-style: normal;
-            font-size: 38px;
-            color:  #CC00FF;
-        }
-
-        /* Styling the first paragraph */
-        #first {
-            position: absolute;
-            top: 100px;
-            margin-left: 50px;
-            width: 1800px;
-            height: 200px;
-            margin-top: 50px;
-            margin-right: 50px;
-            font-family: "Be Vietnam Pro", sans-serif;
-            font-weight: 300;
-            font-style: italic;
-            font-size: 36px;
-            color: #6F5D85;
-        }
-
-        /* Styling the second paragraph */
-        #second {
-            position: absolute;
-            top: 320px;
-            margin-left: 50px;
-            width: 1800px;
-            height: 180px;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 24px;
-            color: #7F8487;
-        }
-
-        /* Styling the "Hi! I am Janani Upeksha" paragraph */
-        #hi > p {
-            position: absolute;
-            top: 550px;
-            margin-left: 50px;
-            width: 450px;
-            height: 40px;
-            left: 800px;
-            font-family: "Bevan", serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 28px;
-            color: #6F5D85;
-        }
-
-        /* Styling the "Follow Me" paragraph */
-        #follow > p {
-            position: absolute;
-            top: 600px;
-            margin-left: 50px;
-            width: 250px;
-            height: 50px;
-            left: 800px;
-            font-family: "Libre Baskerville", serif;
-            font-weight: 500;
-            font-style: normal;
-            font-size: 28px;
-            color: #7F8487;
-        }
-
-        /* Styling the social icons container */
-        #social-icons {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 650px;
-            height: 100px;
-            margin-top: 700px;
-            margin-left: 850px;
-        }
-
-        /* Styling individual social icon containers */
-        #social-icons div {
-            display: flex;
-            align-items: center;
-            padding: 60px;
-        }
-
-        /* Styling the social icon images */
-        #social-icons img {
-            width: 50px;
-            height: 50px;
-            margin-right: 5px;
-        }
-
-        /* Styling the social icon text */
-        #social-icons p {
-            margin: 0;
-            font-size: 18px;
-            padding-left: 10px;
-            color: #CC00FF;
-        }
-
-        /* Styling the photo container */
-        #photo-container {
-            position: absolute;
-            bottom: 100px;
-            left: 0;
-            width: 350px;
-            height: 350px;
-            margin-left: 210px;
-        }
-
-        /* Styling the photo */
-        #photo-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
 
 
 
@@ -433,84 +132,84 @@
 
 <!------------Skills------------>
 <section class="skills">
-    <div>My Skills</div>
-    <div>My Expertise Area</div>
+    <div id="myskills">My Skills</div>
+    <div id="expertise">My Expertise Area</div>
 
     <div class="progress-bar">
         <div class="progress">
             <p>Java</p>
             <progress value="80" max="100"></progress>
-            <div class="outer-circle">
-                <div class="inner-circle"></div>
-            </div>
+
         </div>
         <div class="progress">
             <p>HTML</p>
-            <progress value="95" max="100"></progress>
-            <div class="outer-circle">
-                <div class="inner-circle"></div>
-            </div>
+            <progress value="95" id="as" max="100"></progress>
         </div>
         <div class="progress">
             <p>CSS</p>
             <progress value="90" max="100"></progress>
-            <div class="outer-circle">
-                <div class="inner-circle"></div>
-            </div>
+
         </div>
         <div class="progress">
             <p>SQL</p>
             <progress value="85" max="100"></progress>
-            <div class="outer-circle">
-                <div class="inner-circle"></div>
-            </div>
         </div>
         <div class="progress">
             <p>JavaScript</p>
             <progress value="90" max="100"></progress>
-            <div class="outer-circle">
-                <div class="inner-circle"></div>
-            </div>
         </div>
         <div class="progress">
             <p>Git</p>
             <progress value="90" max="100"></progress>
-            <div class="outer-circle">
-                <div class="inner-circle"></div>
+        </div>
+    </div>
+
+    <div class="circle_div">
+        <div class="progress-circle">
+            <p>Communication</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 65%;">65%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress-circle">
+            <p>Collaboration</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 80%;">80%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress-circle">
+            <p>Teamwork</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 75%;">75%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="progress-circle">
+            <p>Leadership</p>
+            <div class="outer">
+                <div class="inner">
+                    <div id="num" style="--percentage: 90%;">90%</div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                        <circle cx="100" cy="100" r="90" stroke-linecap="round" />
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
-
-    <div class="progress-circle">
-        <div class="socialskill">
-            <p>Communication</p>
-            <p>75%</p>
-            <!--<progress value="75" max="100"></progress>-->
-            <div class="circle"></div>
-        </div>
-
-        <div class="socialskill">
-            <p>Adaptability</p>
-            <p>80%</p>
-            <!--<progress value="80" max="100"></progress>-->
-            <div class="circle"></div>
-        </div>
-
-        <div class="socialskill">
-            <p>Problem Solving</p>
-            <p>85%</p>
-            <!--<progress value="85" max="100"></progress>-->
-            <div class="circle"></div>
-        </div>
-
-        <div class="socialskill">
-            <p>Team Work</p>
-            <p>95%</p>
-            <!--<progress value="95" max="100"></progress>-->
-            <div class="circle"></div>
-        </div>
-    </div>
-
 </section>
 
 <!----------Recent Projects------------>
@@ -528,75 +227,92 @@
 </section>
 
 <!----------Contact Me---------->
-<section class="contact          ">
-    <div>Contact Me</div>
-    <div>How can I help your Next Project</div>
+<section class="contact">
+    <div id="contactme">Contact Me</div>
+    <div id="help">How can I help your Next Project</div>
 
-    <div class="rectangle">
-        <p>Web Design & Development</p>
-        <div class="img-circle">
-            <img src="assets/webd.png" alt="Web Design & Development">
+    <div id="grid">
+        <div class="rectangle">
+            <div class="img-circle">
+                <img src="assets/webd.png" alt="Web Design & Development">
+            </div>
+            <p>Web Design & Development</p>
+        </div>
+        <div class="rectangle">
+            <div class="img-circle">
+                <img src="assets/be.png" alt="BackEnd Development">
+            </div>
+            <p>BackEnd Development</p>
+        </div>
+        <div class="rectangle">
+            <div class="img-circle">
+                <img src="assets/icons8-html-5-48.png" alt="FrontEnd Development">
+            </div>
+            <p>FrontEnd Development</p>
+        </div>
+        <div class="rectangle">
+            <div class="img-circle">
+                <img src="assets/ui.png" alt="UI/UX Designing">
+            </div>
+            <p>UI/UX Designing</p>
         </div>
     </div>
-    <div class="rectangle">
-        <p>BackEnd Development</p>
-        <div class="img-circle">
-            <img src="assets/be.png" alt="BackEnd Development">
+    <!-- Wrapping #details inside another container -->
+    <div id="details-container">
+        <div id="details">
+            <div>
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name">
+            </div>
+            <div>
+                <label for="second-name">Second Name</label><br>
+                <input type="text" id="second-name">
+            </div>
+            <div id="msg">
+                <label for="message">Message</label><br>
+                <textarea id="message" rows="8" cols="60"></textarea>
+            </div>
+            <div>
+                <label for="email">E-mail</label><br>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="email">Contact No</label><br>
+                <input type="email" id="no">
+            </div>
+            <button id="send-btn">Send It</button>
         </div>
     </div>
-    <div class="rectangle">
-        <p>FrontEnd Development</p>
-        <div class="img-circle">
-            <img src="assets/icons8-html-5-48.png" alt="BackEnd Development">
+    <!------------Footer---------->
+    <footer>
+        <div class="images-container">
+            <div id="location" class="inline-content">
+                <img src="assets/Location.png" title="Location" alt="Location">
+                <p>270,IhalaBiyanwila,Kadawatha</p>
+            </div>
+            <div id="mail" class="inline-content">
+                <img src="assets/Mail.png" title="Mail" alt="Mail">
+                <p>upekshakeshani@gmail.com</p>
+            </div>
+            <div id="contact" class="inline-content">
+                <img src="assets/Phone.png" title="Contact" alt="Contact">
+                <p>0774662870</p>
+            </div>
         </div>
-    </div>
-    <div class="rectangle">
-        <p>UI/UX Designing</p>
-        <div class="img-circle">
-            <img src="assets/ui.png" alt="UI/UX Designing">
+        <div id="end">
+            &copy; All Rights Reserved. Presented by Janani Upeksha
         </div>
-    </div>
-
-    <div>
-        <label for="name">First Name</label><br>
-        <input type="text" id=" name">
-    </div>
-    <div>
-        <label for="name">Second Name</label><br>
-        <input type="text" id="name">
-    </div>
-    <label for="email">E mail</label><br>
-    <input type="email" id="email">
-    <div>
-        <label for="msg">Message</label><br>
-        <textarea
-                id="msg"
-                rows="8"
-                cols="60"
-        ></textarea>
-    </div>
-    <div>
-        <button>Send It</button>
-    </div>
+    </footer>
 </section>
+<script>
+    // Update stroke-dashoffset for each progress circle
+    document.querySelectorAll('.progress-circle').forEach(function(circle) {
+        var percentage = circle.querySelector('#num').style.getPropertyValue('--percentage');
+        var circumference = 565; // Circumference of the circle
+        var offset = circumference - (circumference * parseInt(percentage) / 100);
+        circle.querySelector('circle').style.setProperty('--offset', offset);
+    });
+</script>
 
-<!------------Footer---------->
-<footer>
-    <div id="location">
-        <img src="assets/Location.png" title="Location" alt="Location">
-        <p>270,IhalaBiyanwila,Kadawatha</p>
-    </div>
-    <div id="mail">
-        <img src="assets/Mail.png" title="Mail" alt="Mail">
-        <p>upekshakeshani@gmail.com</p>
-    </div>
-    <div id="contact">
-        <img src="assets/Phone.png" title="Contact" alt="Contact">
-        <p>u0774662870</p>
-    </div>
-    <div id="end">
-        &copy;All Rigths Reserved.Presented by Janani Upeksha
-    </div>
-</footer>
 </body>
 </html>
