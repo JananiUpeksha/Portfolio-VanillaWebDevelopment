@@ -157,8 +157,8 @@ header>section>nav>ul>li>a:hover {
     height: 100vh;
 
 }
-<!----------------------------------------------------------------------->
-        /* Resetting default margin and overflow */
+
+/* --------------------------aboutme------------------------------------------------------ */
     body {
         margin: 0;
         overflow: hidden;
@@ -300,8 +300,9 @@ header>section>nav>ul>li>a:hover {
     object-fit: cover;
 }
 
-/*!*skills*!
-body{
+/*-------------------skills--------------------------------------*/
+
+/*body{
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -440,7 +441,8 @@ svg {
         stroke-dashoffset: var(--offset); /* Move the stroke-dash based on percentage */
     }
 }
-/*contact*/
+/*-------------------contact----------------------------------*/
+
 /*
 body {
     margin: 0;
@@ -633,5 +635,104 @@ footer p {
     cursor: pointer;
 }
 
-<!-------------------------projects---------------------------------------->
+/*-------------------------projects----------------------------------------*/
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0 ;
+    }
+.recentProjects{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.recentProjects #topic{
+    position: absolute;
+    top: 40px;
+    color: #CC00FF;
+    font-size: 34px;
+    display: none;
+}
+.recentProjects #semitopic{
+    position: absolute;
+    top: 80px;
+    color: #6F5D85;
+    font-size: 34px;
+    display: none;
+}
+.image-slider {
+    position: relative;
+    width: 60%;
+}
+.slider{
+    display: flex;
+    width: 500px; /* Adjust width to fit one image */
+    overflow: hidden; /* Hide overflow */
+    background-color: #FBF5FF;
+    margin-left: 345px; /*methnin position eka wens krnna*/
+}
+.slider>img{
+    height: 400px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    cursor: pointer; /* Add cursor pointer to images */
+}
+.slider>img:last-child {
+    margin-right: 0;
+}
+.slider>input{
+    display: none;
+}
+.navigation-circle{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.navigation-circle > label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #CC00FF 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.navigation-circle > label:hover{
+    background-color:  #CC00FF;;
+}
+#img1:checked ~ .m1 {
+    margin-left: 3%;
+}
+#img2:checked ~ .m2 {
+    margin-left: -95%; /* Adjust the value based on the width of one image */
+}
+#img3:checked ~ .m3 {
+    margin-left: -190%; /* Adjust the value based on the width of one image */
+}
+#img4:checked ~ .m4 {
+    margin-left: -290%; /* Adjust the value based on the width of one image */
+}
+#githubLink {
+    display: none; /* Initially hidden */
+    margin-top: 0; /* Reset margin-top */
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 40px;
+    font-size: 28px;
+    background-color: #CC00FF;
+    border-radius: 10px;
+    color: snow;
+}
+#githubLink:hover{
+    background-color: white;
+    color: #CC00FF;
+    border: 3px solid #CC00FF;
+    cursor: pointer;
+}
 

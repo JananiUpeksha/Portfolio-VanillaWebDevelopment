@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c9bb906-6609-45cc-a1ce-bddacd1e9bf6" name="Changes" comment="" />
+    <list default="true" id="9c9bb906-6609-45cc-a1ce-bddacd1e9bf6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/A1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/A2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/A3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/A4.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +46,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;css&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/janani/Downloads/its1119-gdse67-css--master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/janani/IdeaProjects/my-profile/assets&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -84,6 +90,8 @@
       <workItem from="1712434641093" duration="1355000" />
       <workItem from="1712647041053" duration="1784000" />
       <workItem from="1712648900909" duration="174000" />
+      <workItem from="1712745660053" duration="5520000" />
+      <workItem from="1712771791866" duration="63000" />
     </task>
     <servers />
   </component>
