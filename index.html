@@ -338,6 +338,50 @@
         circle.querySelector('circle').style.setProperty('--offset', offset);
     });
 
+   /* Projects*/
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('.slider img');
+        const githubLink = document.getElementById('githubLink');
+
+        const githubUrls = [
+            'https://github.com/JananiUpeksha/CSS-poss.git',
+            'https://github.com/JananiUpeksha/ChatPal.git',
+            'https://github.com/JananiUpeksha/BookWorm.git',
+            'https://github.com/JananiUpeksha/OceanPulseLayered.git'
+        ];
+
+        const slider = document.querySelector('.slider');
+
+        slider.addEventListener('click', (event) => {
+            const clickedImage = event.target;
+            const index = Array.from(slider.children).indexOf(clickedImage);
+
+            if (clickedImage.tagName === 'IMG') {
+                // Toggle background color of clicked image
+                images.forEach(image => image.style.backgroundColor = 'transparent');
+                clickedImage.style.backgroundColor = 'blue';
+
+                // Show the GitHub link button
+                githubLink.style.display = 'block';
+                // Set the GitHub link based on the index
+                githubLink.onclick = function() {
+                    window.location.href = githubUrls[index];
+                };
+            }
+        });
+
+        // Hide the GitHub link button when moving to the next image
+        document.querySelectorAll('.slider input').forEach((input) => {
+            input.addEventListener('click', () => {
+                githubLink.style.display = 'none';
+                // Reset background color of all images
+                images.forEach((image) => {
+                    image.style.backgroundColor = 'transparent';
+                });
+            });
+        });
+    });
+
 </script>
 
 </body>
