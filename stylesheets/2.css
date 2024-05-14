@@ -59,7 +59,7 @@ body {
     height: 180px;
     font-weight: 400;
     font-style: normal;
-    font-size: 24px;
+    font-size: 28px;
     color: #7F8487;
 }
 
@@ -142,3 +142,306 @@ body {
     height: 100%;
     object-fit: cover;
 }
+@media (max-width: 1440px) and (min-width: 1024px) {
+    /* Adjustments for screens up to 1440px width */
+    #who > p {
+        margin-left: 30px;
+        font-size: 32px;
+
+    }
+    #first {
+        margin-left: 30px;
+        font-size: 32px;
+        width: 1350px;
+        height: 300px;
+    }
+    #second {
+        margin-left: 30px;
+        font-size: 24px;
+        width: 1350px;
+        height: 400px;
+    }
+    #hi > p, #follow > p {
+        margin-left: -180px;
+    }
+    #photo-container {
+        margin-left: 50px;
+    }
+    #social-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 650px;
+        height: 100px;
+        margin-top: 700px;
+        margin-left: 600px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Adjustments for screens up to 1024px width */
+    #first {
+        margin-left: 30px;
+        font-size: 32px;
+        width: 950px;
+        height: 400px;
+    }
+    #second {
+        margin-left: 30px;
+        font-size: 24px;
+        width: 950px;
+        height: 500px;
+    }
+
+    #who > p, #first, #second {
+        margin-left: 20px;
+        font-size: 28px;
+    }
+    #hi > p, #follow > p {
+        margin-left: -400px;
+    }
+    #photo-container {
+        margin-left: 30px;
+        bottom: 15px;
+    }
+    #photo-container img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+    }
+    #social-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 60px;
+        height: 100px;
+        margin-top: 700px;
+        margin-left: 650px;
+    }
+    #social-icons img {
+        width: 40px;
+        height: 40px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    /* Adjustments for screens up to 770px width */
+    #first {
+        margin-left: 30px;
+        font-size: 28px;
+        width: 670px;
+        height: 600px;
+    }
+    #second {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 20px;
+        width: 670px;
+        height: 800px;
+    }
+
+    #hi > p, #follow > p {
+        margin-top: 100px;
+        margin-left: -520px;
+    }
+    #photo-container {
+        margin-left: 30px;
+        bottom: -30px;
+    }
+    #photo-container img {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+    #social-icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+        height: 100px;
+        margin-top: 750px;
+        margin-left: 230px;
+    }
+    #social-icons img {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+    }
+    #social-icons div {
+        padding: 0px; /* Reduced padding */
+    }
+}
+
+@media screen and (max-width: 565px) {
+    /* Adjustments for screens up to 565px width */
+    #first {
+        margin-left: 30px;
+        font-size: 24px;
+        width: 430px;
+        height: 700px;
+    }
+    #second {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 20px;
+        width: 430px;
+        height: 900px;
+    }
+
+    #hi > p, #follow > p {
+        margin-top: 100px;
+        margin-left: -560px;
+        font-size: 20px;
+    }
+    #photo-container {
+        margin-left: 15px;
+        bottom: -70px;
+    }
+    #photo-container img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }
+    #social-icons {
+        display: flex;
+        flex-direction: column; /* Change to column layout */
+        justify-content: left; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 750px;
+        margin-left: 100px;
+    }
+
+    #social-icons div {
+        padding: 0px; /* Reduced padding */
+        margin-bottom: 10px; /* Adjusted margin between icons */
+        justify-content: left;
+    }
+
+    #social-icons img {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+    }
+    #git{
+       margin-left: -13px;
+    }
+}
+@media screen and (max-width: 425px) {
+    /* Adjustments for screens up to 375px width */
+    #first {
+        margin-left: 30px;
+        font-size: 22px;
+        width: 350px;
+        height: 700px;
+    }
+
+    #second {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 18px;
+        width: 350px;
+        height: 900px;
+    }
+
+    #hi > p, #follow > p {
+        margin-top: 100px;
+        margin-left: -610px;
+        font-size: 18px;
+    }
+
+    #photo-container {
+        margin-left: 10px;
+        bottom: -90px;
+    }
+
+    #photo-container img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    #social-icons {
+        display: flex;
+        flex-direction: column; /* Change to column layout */
+        justify-content: left; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 750px;
+        margin-left: 100px;
+    }
+
+    #social-icons div {
+        padding: 0px; /* Reduced padding */
+        margin-bottom: 10px; /* Adjusted margin between icons */
+        justify-content: left;
+    }
+
+    #social-icons img {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+    }
+
+    #git {
+        margin-left: -13px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* Adjustments for screens up to 375px width */
+    #first {
+        margin-left: 30px;
+        font-size: 22px;
+        width: 300px;
+        height: 700px;
+    }
+    #second {
+        margin-left: 30px;
+        margin-top: 50px;
+        font-size: 18px;
+        width: 300px;
+        height: 900px;
+    }
+
+    #hi > p, #follow > p {
+        margin-top: 100px;
+        margin-left: -650px;
+        font-size: 18px;
+    }
+    #photo-container {
+        margin-left: 10px;
+        bottom: -90px;
+    }
+    #photo-container img {
+        width: 40%;
+        height: 40%;
+        object-fit: cover;
+    }
+    #social-icons {
+        display: flex;
+        flex-direction: column; /* Change to column layout */
+        justify-content: left; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 750px;
+        margin-left: 100px;
+    }
+
+    #social-icons div {
+        padding: 0px; /* Reduced padding */
+        margin-bottom: 10px; /* Adjusted margin between icons */
+        justify-content: left;
+    }
+
+    #social-icons img {
+        width: 30px;
+        height: 30px;
+        margin-right: 0px;
+    }
+    #git{
+        margin-left: -13px;
+    }
+}
+

@@ -166,6 +166,123 @@
             object-fit: cover;
         }
 
+        /* Media query for screen widths up to 1440px */
+        @media screen and (max-width: 1440px) {
+            /* Adjustments for screen widths up to 1440px */
+            #who > p {
+                font-size: 32px;
+            }
+            #first {
+                font-size: 28px;
+            }
+            #second {
+                font-size: 20px;
+            }
+            #hi > p {
+                font-size: 24px;
+            }
+            #follow > p {
+                font-size: 24px;
+            }
+            #social-icons {
+                width: 500px;
+                margin-left: 650px;
+            }
+            #social-icons img {
+                width: 40px;
+                height: 40px;
+            }
+            #social-icons p {
+                font-size: 16px;
+            }
+        }
+
+        /* Media query for screen widths up to 1024px */
+        @media screen and (max-width: 1024px) {
+            /* Adjustments for screen widths up to 1024px */
+            #who > p {
+                font-size: 28px;
+            }
+            #first {
+                font-size: 24px;
+            }
+            #second {
+                font-size: 18px;
+            }
+            #hi > p {
+                font-size: 20px;
+            }
+            #follow > p {
+                font-size: 20px;
+            }
+            #social-icons {
+                width: 400px;
+                margin-left: 550px;
+            }
+            #social-icons img {
+                width: 30px;
+                height: 30px;
+            }
+            #social-icons p {
+                font-size: 14px;
+            }
+        }
+
+        /* Media query for screen widths up to 770px */
+        @media screen and (max-width: 770px) {
+            /* Adjustments for screen widths up to 770px */
+            #who > p {
+                font-size: 24px;
+            }
+            #first {
+                font-size: 20px;
+            }
+            #second {
+                font-size: 16px;
+            }
+            #hi > p {
+                font-size: 18px;
+            }
+            #follow > p {
+                font-size: 18px;
+            }
+            #social-icons {
+                width: 300px;
+                margin-left: 400px;
+            }
+            #social-icons img {
+                width: 20px;
+                height: 20px;
+            }
+            #social-icons p {
+                font-size: 12px;
+            }
+        }
+
+        /* Media query for screen widths up to 425px */
+        @media screen and (max-width: 425px) {
+            /* Adjustments for screen widths up to 425px */
+            #social-icons {
+                width: 100%;
+                margin-left: 0;
+                display: grid;
+                grid-template-columns: 1fr; /* One column */
+                grid-template-rows: repeat(3, auto); /* Three rows with automatic height */
+                gap: 10px; /* Gap between grid items */
+                justify-items: center; /* Center items horizontally */
+                align-items: center; /* Center items vertically */
+            }
+            #social-icons div {
+                padding: 0; /* Remove previous padding */
+            }
+            #social-icons img {
+                width: 40px; /* Adjust icon size */
+                height: 40px;
+            }
+            #social-icons p {
+                font-size: 14px; /* Adjust text size */
+            }
+        }
 
 
     </style>

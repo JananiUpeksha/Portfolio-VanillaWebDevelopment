@@ -139,3 +139,126 @@ svg {
         stroke-dashoffset: var(--offset); /* Move the stroke-dash based on percentage */
     }
 }
+/*-----------------------------media queries----------------------------------------*/
+@media screen and (max-width: 1440px) {
+    /* Adjustments for screens up to 1440px */
+    .progress-bar {
+        margin-left: 100px; /* Adjusted margin-left for progress bar */
+    }
+    #myskills {
+        margin-left: 700px; /* Adjusted margin-left for "My Skills" text */
+    }
+    #expertise {
+        margin-left: 650px; /* Adjusted margin-left for "Expertise" text */
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .progress-bar {
+        margin-left: 50px; /* Adjusted margin-left for progress bar */
+    }
+    #myskills {
+        margin-left: 450px; /* Adjusted margin-left for "My Skills" text */
+    }
+    #expertise {
+        margin-left: 400px; /* Adjusted margin-left for "Expertise" text */
+    }
+    .circle_div {
+        margin-left: -55px; /* Adjusted margin-left for circle_div */
+    }
+
+    .progress-circle > p {
+        left: 70%;
+        transform: translateX(-50%);
+        top: -50px;
+        position: absolute;
+        margin: 0;
+    }
+}
+@media (max-width: 770px) {
+    #myskills {
+        margin-left: 350px; /* Adjusted margin-left for "My Skills" text */
+    }
+    #expertise {
+        margin-left: 300px; /* Adjusted margin-left for "Expertise" text */
+    }
+
+    .circle_div {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .progress-circle {
+        position: relative;
+    }
+
+    .container {
+        position: absolute;
+        width: 150px; /* Adjust this width as needed */
+        height: 150px; /* Adjust this height as needed */
+    }
+
+    .outer {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .percentage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-size: 24px; /* Adjust font size as needed */
+    }
+
+    circle {
+        fill: none;
+        stroke: #CC00FF; /* Adjusted stroke color to purple */
+        stroke-width: 60px; /* Adjusted stroke width */
+        stroke-dasharray: 340; /* Circumference of the circle */
+        stroke-dashoffset: 340; /* Start with full circle */
+        animation: circle 2s linear forwards;
+    }
+
+    @keyframes circle {
+        to {
+            stroke-dashoffset: var(--percentage); /* Move the stroke-dash based on percentage */
+        }
+    }
+    .progress-circle > p {
+        left: 90%;
+        top: -30px;
+    }
+    .circle_div {
+        margin-left: -45px;
+        margin-right: 10px;
+    }
+
+}
+@media (max-width: 770px) {
+    #myskills {
+        margin-left: 350px; /* Adjusted margin-left for "My Skills" text */
+    }
+    #expertise {
+        margin-left: 300px; /* Adjusted margin-left for "Expertise" text */
+    }
+
+}
+
+
+

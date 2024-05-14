@@ -445,6 +445,107 @@ header>section>nav>ul>li>a:hover {
         left: 50px;
     }
 }
+@media (max-width: 565px) {
+    header>section>nav {
+        display: none; /* Hide the nav bar */
+    }
+    #logo {
+        position: absolute;
+        top:0; /* Adjust the top position as needed */
+        left: 0; /* Adjust the left position as needed */
+    }
+
+    #logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .Menu img {
+        display: inline-block; /* Display the menu image */
+        width: 30px; /* Adjust width of the menu image */
+        height: 30px; /* Adjust height of the menu image */
+    }
+
+    /* Adjustments for other elements as needed */
+    .pdetails>img {
+        /* Adjust styles for profile photo */
+        width: 300px;
+        top: 140px;
+        left: 70px;
+        height: auto;
+    }
+
+    #hello {
+        /* Adjust styles for greeting */
+        padding-top: 80px;
+        font-size: 20px;
+        position: absolute;
+        left: -20px;
+        top: -60px;
+    }
+
+    #iam {
+        /* Adjust styles for name */
+        font-size: 18px;
+        position: absolute;
+        top: 50px;
+        left: -20px; /* Ensure both are aligned to the left */
+    }
+
+    #janani {
+        /* Adjust styles for name */
+        font-size: 18px;
+        position: absolute;
+        top: 50px;
+        left: 60px; /* Adjust the left position for spacing */
+    }
+
+
+    #fsd {
+        /* Adjust styles for designation */
+        font-size: 16px;
+        position: absolute;
+        top: 85px;
+        left: -20px;
+    }
+
+    #homeP {
+        /* Adjust styles for description */
+        font-size: 20px;
+    }
+
+    #homePcontainer {
+        /* Adjust styles for container */
+        width: 400px;
+        height: 350px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        position: absolute;
+        top: 385px;
+        left: 10px;
+    }
+
+    #download {
+        /* Adjust styles for download button */
+        font-size: 14px;
+        width: 130px;
+        margin-bottom: 100px;
+        position: absolute;
+        top: 590px;
+        left: 200px;
+    }
+
+    #hireme {
+        /* Adjust styles for hire me button */
+        font-size: 14px;
+        width: 130px;
+        margin-bottom: 100px;
+        position: absolute;
+        top: 590px;
+        left: 30px;
+    }
+
+}
 
 @media (max-width: 375px) {
     header>section>nav {

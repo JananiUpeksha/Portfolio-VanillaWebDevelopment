@@ -189,6 +189,134 @@
       background-color: #CC00FF;;
       color: snow;
     }
+    @media screen and (max-width: 1440px) {
+      /* Adjustments for screen widths up to 1440px */
+      #grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-template-rows: repeat(1, auto); /* One row */
+        grid-gap: 20px; /* Adjust the gap */
+      }
+
+      /* Adjusted styles for the details container */
+      #details-container {
+        margin-left: 200px; /* Adjust the left margin */
+        margin-right: 200px; /* Adjust the right margin */
+      }
+
+      /* Adjusted grid layout for details */
+      #details {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(3, auto); /* Three rows */
+        grid-gap: 15px; /* Adjust the gap */
+      }
+
+      /* Adjusted positioning for send button */
+      #send-btn {
+        grid-row: 3; /* Third row */
+        grid-column: 2; /* Second column */
+        width: calc(100% - 50px); /* Adjusted width */
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      /* Adjustments for screen widths up to 1024px */
+      #grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(2, auto); /* Two rows */
+      }
+
+      /* Adjusted styles for the details container */
+      #details-container {
+        margin-left: 100px; /* Adjust the left margin */
+        margin-right: 100px; /* Adjust the right margin */
+      }
+
+      /* Adjusted grid layout for details */
+      #details {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(3, auto); /* Three rows */
+        grid-gap: 15px; /* Adjust the gap */
+      }
+
+      /* Adjusted positioning for send button */
+      #send-btn {
+        grid-row: 3; /* Third row */
+        grid-column: 2; /* Second column */
+        width: calc(100% - 50px); /* Adjusted width */
+      }
+    }
+
+    @media screen and (max-width: 770px) {
+      /* Adjustments for screen widths up to 770px */
+      #grid {
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: repeat(4, auto); /* Four rows */
+        grid-gap: 20px; /* Adjust the gap */
+      }
+
+      /* Adjusted styles for the details container */
+      #details-container {
+        margin-left: 20px; /* Adjust the left margin */
+        margin-right: 20px; /* Adjust the right margin */
+      }
+
+      /* Adjusted grid layout for details */
+      #details {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(3, auto); /* Three rows */
+        grid-gap: 15px; /* Adjust the gap */
+      }
+
+      /* Adjusted positioning for send button */
+      #send-btn {
+        grid-row: 3; /* Third row */
+        grid-column: 2; /* Second column */
+        width: calc(100% - 25px); /* Adjusted width */
+      }
+    }
+
+    /* Media query for screen widths above 425px */
+    @media screen and (min-width: 426px) {
+      /* Adjustments for screen widths above 425px */
+      #grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+      }
+    }
+
+    /* Media query for screen widths up to 425px */
+    @media screen and (max-width: 425px) {
+      /* Adjustments for screen widths up to 425px */
+      #grid {
+        display: grid;
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: repeat(4, auto); /* Four rows */
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+      }
+
+      /* Adjusted styles for the details container */
+      #details-container {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      /* Adjusted grid layout for details */
+      #details {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(3, auto); /* Three rows */
+        grid-gap: 10px;
+      }
+
+      /* Adjusted positioning for send button */
+      #send-btn {
+        grid-row: 3; /* Third row */
+        grid-column: 2; /* Second column */
+        width: calc(100% - 25px); /* Adjusted width */
+      }
+    }
+
   </style>
 </head>
 <body>

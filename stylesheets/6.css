@@ -191,3 +191,39 @@ footer p {
     border: 3px solid #CC00FF;
     cursor: pointer;
 }
+
+@media only screen and (min-width: 1440px) {
+    /* Example CSS rules for screen size 1440px and above */
+    .home {
+        /* Example CSS rules for home section at 1440px and above */
+        font-size: 18px;
+    }
+
+    .aboutMe {
+        /* Example CSS rules for aboutMe section at 1440px and above */
+        font-size: 20px;
+    }
+
+    .skills {
+        /* Example CSS rules for skills section at 1440px and above */
+        font-size: 22px;
+    }
+
+    .contact {
+        /* Example CSS rules for contact section at 1440px and above */
+        font-size: 24px;
+    }
+
+    .recentProjects {
+        /* Example CSS rules for recentProjects section at 1440px and above */
+        font-size: 26px;
+    }
+
+    #first-name,
+    #second-name,
+    #email,
+    #contact {
+        width: calc(100% - 50px); /* Adjust width to fit within the grid area */
+    }
+}
+
