@@ -1,13 +1,215 @@
-/*-------------------contact----------------------------------*/
+/*!*-------------------contact----------------------------------*!*/
 
-/*
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-*/
+/*!**/
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    overflow: hidden;*/
+/*}*/
+/**!*/
 
+/*.contact {*/
+/*    margin-top: 20px;*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    position: relative;*/
+/*    contain: content;*/
+/*    overflow: hidden;*/
+/*}*/
+/*#contactme{*/
+/*    margin-top: 40px;*/
+/*    margin-left: 850px;*/
+/*    font-size: 32px;*/
+/*    color: #CC00FF;*/
+/*}*/
+/*#help{*/
+/*    font-size: 28px;*/
+/*    margin-left: 750px;*/
+/*    margin-bottom: 30px;*/
+/*    color: #6F5D85;*/
+/*}*/
+
+/*#grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(2, 1fr);*/
+/*    grid-template-rows: repeat(2, auto);*/
+/*    grid-gap: 20px;*/
+/*    justify-items: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.rectangle {*/
+/*    position: relative;*/
+/*    width: 380px;*/
+/*    height: 130px;*/
+/*    border-radius: 10px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;*/
+/*    background-color: #FBF5FF;*/
+/*    color: #7F8487;*/
+/*}*/
+
+/*.rectangle > p {*/
+/*    margin: 0;*/
+/*    text-align: center;*/
+/*    font-size: 24px;*/
+/*}*/
+
+/*.img-circle {*/
+/*    position: absolute;*/
+/*    left: -40px; !* Adjust this value to move the image circle more towards the left *!*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    border-radius: 50%;*/
+/*    overflow: hidden;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background-color: #FBF5FF;*/
+/*    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;*/
+/*}*/
+
+/*.img-circle img {*/
+/*    max-width: 100%;*/
+/*    max-height: 100%;*/
+/*}*/
+
+/*footer {*/
+/*    background-color: #FBF5FF;*/
+/*    color: #7F8487;*/
+/*    padding: 50px;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 20px;*/
+/*    display: flex; !* Use flexbox *!*/
+/*    flex-direction: column; !* Align items vertically *!*/
+/*    justify-content: center; !* Center items vertically *!*/
+/*}*/
+
+/*footer div {*/
+/*    display: inline-block;*/
+/*    !*margin-right: 20px;*!*/
+/*}*/
+
+/*footer img {*/
+/*    width: 30px;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+/*footer .inline-content {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*footer p {*/
+/*    margin: 0 0 0 10px;*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*#end {*/
+/*    margin-top: 5px;*/
+/*    bottom: 20px;*/
+/*    right: 20px;*/
+/*}*/
+
+/*.images-container {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 0 20px;*/
+/*    width: 100%;*/
+/*    box-sizing: border-box;*/
+/*   !* margin-left: 480px;*!*/
+/*}*/
+/*!*#mail{*/
+/*    margin-left: 425px;*/
+/*}*!*/
+/*!*#contact{*/
+/*    margin-left: 430px;*/
+/*}*!*/
+
+/*!* Adjusted margin for the container *!*/
+/*#details-container {*/
+/*    margin-top: 100px;*/
+/*    margin-left: 350px;*/
+/*    margin-right: 350px;*/
+/*}*/
+/*#details input {*/
+/*    width: calc(100% - 25px); !* Adjust the width to fit within the grid area *!*/
+/*    padding: 8px; !* Add padding *!*/
+/*    margin-top: 5px; !* Add top margin *!*/
+/*    box-sizing: border-box; !* Include padding and border in the element's total width and height *!*/
+/*    background-color: #FBF5FF;*/
+/*    border: #FBF5FF;*/
+/*    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;*/
+/*}*/
+
+/*#details {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    grid-template-rows: auto auto;*/
+/*    grid-gap: 10px; !* Reduced the gap to 10px *!*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*#details div {*/
+/*    grid-column: span 1;*/
+/*    margin: 0; !* Remove any margins *!*/
+/*    padding: 0; !* Remove any padding *!*/
+/*}*/
+
+/*#first-name {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*#second-name {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*#message {*/
+/*    margin-top: 5px;*/
+/*    grid-column: span 3;*/
+/*    background-color: #FBF5FF;*/
+/*    border: #FBF5FF;*/
+/*    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;*/
+/*}*/
+
+/*#email {*/
+/*    grid-column: 1 / span 2; !* Make the email input span across two columns *!*/
+/*    margin-top: 5px;*/
+/*}*/
+
+/*#send-btn {*/
+/*    grid-row: 2; !* Place the button in the second row *!*/
+/*    grid-column: 3; !* Place the button in the third column *!*/
+/*    width: 100%; !* Make the button width 100% *!*/
+/*    margin-top: 10px; !* Add some top margin *!*/
+/*    padding: 5px; !* Add padding *!*/
+/*    font-size: 16px; !* Adjust font size *!*/
+/*    border-radius: 10px;*/
+/*    border: #CC00FF;*/
+/*    background-color: #CC00FF;;*/
+/*    color: snow;*/
+/*}*/
+
+/*#send-btn:hover {*/
+/*    background-color: white;*/
+/*    color: #CC00FF;*/
+/*    border: 3px solid #CC00FF;*/
+/*    cursor: pointer;*/
+/*}*/
+
+
+
+/*@media (max-width: 1440px) {*/
+
+/*}*/
+/* Contact Section Styles */
 .contact {
     margin-top: 20px;
     width: 100vw;
@@ -16,13 +218,15 @@ body {
     contain: content;
     overflow: hidden;
 }
-#contactme{
+
+#contactme {
     margin-top: 40px;
     margin-left: 850px;
     font-size: 32px;
     color: #CC00FF;
 }
-#help{
+
+#help {
     font-size: 28px;
     margin-left: 750px;
     margin-bottom: 30px;
@@ -40,7 +244,7 @@ body {
 
 .rectangle {
     position: relative;
-    width: 350px;
+    width: 380px;
     height: 130px;
     border-radius: 10px;
     display: flex;
@@ -54,6 +258,7 @@ body {
 .rectangle > p {
     margin: 0;
     text-align: center;
+    font-size: 24px;
 }
 
 .img-circle {
@@ -107,6 +312,7 @@ footer .inline-content {
 
 footer p {
     margin: 0 0 0 10px;
+    font-size: 20px;
 }
 
 #end {
@@ -120,68 +326,57 @@ footer p {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-left: 480px;*/
 }
 
 /* Adjusted margin for the container */
-#details-container {
-    margin-top: 100px;
-    margin-left: 350px;
-    margin-right: 350px;
-}
-#details input {
-    width: calc(100% - 25px); /* Adjust the width to fit within the grid area */
-    padding: 8px; /* Add padding */
-    margin-top: 5px; /* Add top margin */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    background-color: #FBF5FF;
-    border: #FBF5FF;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
 #details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
-    grid-gap: 10px; /* Reduced the gap to 10px */
+    grid-gap: 5px; /* Reduced the gap to 10px */
+    font-size: 20px;
+    margin-top: 90px;
+    margin-left: 80px;
 }
 
-#details div {
-    grid-column: span 1;
-    margin: 0; /* Remove any margins */
-    padding: 0; /* Remove any padding */
-}
-
-#first-name {
-    margin-top: 10px;
-}
-
-#second-name {
-    margin-top: 10px;
-}
-
-#message {
-    margin-top: 5px;
-    grid-column: span 3;
+#details input{
+    width: calc(100% - 20%); /* Adjust the width to fit within the grid area */
+    padding: 8px; /* Add padding */
+    margin-top: 5px; /* Add top margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
     background-color: #FBF5FF;
-    border: #FBF5FF;
+    border: 1px solid #FBF5FF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: 50px;
+}
+#details textarea {
+    width: calc(100% - 20%); /* Adjust the width to fit within the grid area */
+    padding: 8px; /* Add padding */
+    margin-top: 5px; /* Add top margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #FBF5FF;
+    border: 1px solid #FBF5FF;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-#email {
-    grid-column: 1 / span 2; /* Make the email input span across two columns */
-    margin-top: 5px;
+#details textarea {
+    grid-column: span 3; /* Make the textarea span across all columns */
+    height: 100px; /* Set a height for the textarea */
 }
 
 #send-btn {
     grid-row: 2; /* Place the button in the second row */
     grid-column: 3; /* Place the button in the third column */
-    width: 100%; /* Make the button width 100% */
+    width: calc(100% - 20%);
     margin-top: 10px; /* Add some top margin */
     padding: 5px; /* Add padding */
     font-size: 16px; /* Adjust font size */
     border-radius: 10px;
-    border: #CC00FF;
-    background-color: #CC00FF;;
+    border: 1px solid #CC00FF;
+    background-color: #CC00FF;
     color: snow;
 }
 
@@ -192,38 +387,116 @@ footer p {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 1440px) {
-    /* Example CSS rules for screen size 1440px and above */
-    .home {
-        /* Example CSS rules for home section at 1440px and above */
-        font-size: 18px;
+/* Responsive Styles for Larger Screens */
+@media (max-width: 1440px) {
+    #help {
+        margin-left: 550px;
     }
 
-    .aboutMe {
-        /* Example CSS rules for aboutMe section at 1440px and above */
+    #contactme {
+        margin-left: 650px;
+    }
+}
+@media (max-width: 1024px) {
+    #help {
+        margin-left: 350px;
+    }
+
+    #contactme {
+        margin-left: 450px;
+    }
+}
+@media (max-width: 770px) {
+    #help {
+        margin-left: 150px;
+    }
+
+    #contactme {
+        margin-left: 250px;
+    }
+    .rectangle {
+        width: 330px;
+        height: 130px;
+    }
+
+    .rectangle > p {
         font-size: 20px;
     }
-
-    .skills {
-        /* Example CSS rules for skills section at 1440px and above */
-        font-size: 22px;
+    #grid{
+        margin-left: 5px;
+    }
+    .img-circle {
+        left: -20px; /* Adjust this value to move the image circle more towards the left */
+        width: 60px;
+        height: 60px;
     }
 
-    .contact {
-        /* Example CSS rules for contact section at 1440px and above */
-        font-size: 24px;
+    .img-circle img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+    #details {
+        margin-left: 15px;
     }
 
-    .recentProjects {
-        /* Example CSS rules for recentProjects section at 1440px and above */
-        font-size: 26px;
+    footer p {
+        margin: 0 0 0 10px;
+        font-size: 16px;
+    }
+    .images-container {
+        margin-left: -25px; /* Adjust this value as needed to move the container to the left */
     }
 
-    #first-name,
-    #second-name,
-    #email,
-    #contact {
-        width: calc(100% - 50px); /* Adjust width to fit within the grid area */
+}
+@media (max-width: 565px) {
+    #help {
+        margin-left: 75px;
     }
+
+    #contactme {
+        margin-left: 180px;
+    }
+    .rectangle {
+        width: 330px;
+        height: 80px;
+    }
+
+    .rectangle > p {
+        font-size: 20px;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: repeat(4, auto); /* Four rows */
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .img-circle {
+        left: -20px; /* Adjust this value to move the image circle more towards the left */
+        width: 50px;
+        height: 50px;
+    }
+
+    .img-circle img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+    #details {
+        margin-left: 15px;
+    }
+
+    footer {
+        height: 10px;
+    }
+    .images-container {
+        margin-left: -25px; /* Adjust this value as needed to move the container to the left */
+        display: none;
+    }
+    #end{
+        margin-right: 120px;
+    }
+
 }
 
