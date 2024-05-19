@@ -471,7 +471,7 @@ header>section>nav>ul>li>a:hover {
         /* Adjust styles for profile photo */
         width: 300px;
         top: 140px;
-        left: 70px;
+        left: 110px;
         height: auto;
     }
 
@@ -516,7 +516,7 @@ header>section>nav>ul>li>a:hover {
 
     #homePcontainer {
         /* Adjust styles for container */
-        width: 400px;
+        width: 480px;
         height: 350px;
         margin-left: 20px;
         margin-bottom: 40px;
@@ -532,7 +532,7 @@ header>section>nav>ul>li>a:hover {
         margin-bottom: 100px;
         position: absolute;
         top: 590px;
-        left: 200px;
+        left: 250px;
     }
 
     #hireme {
@@ -542,7 +542,7 @@ header>section>nav>ul>li>a:hover {
         margin-bottom: 100px;
         position: absolute;
         top: 590px;
-        left: 30px;
+        left: 50px;
     }
 
 }
@@ -550,6 +550,15 @@ header>section>nav>ul>li>a:hover {
 @media (max-width: 375px) {
     header>section>nav {
         display: none; /* Hide the nav bar */
+    }
+    header > section > nav .Menu {
+        display: block; /* Ensure the menu image is displayed */
+    }
+
+    header > section > nav ul li .Menu img {
+        display: inline-block; /* Display the menu image */
+        width: 150px; /* Adjust width of the menu image */
+        height: 150px; /* Adjust height of the menu image */
     }
     #logo {
         position: absolute;
@@ -562,11 +571,11 @@ header>section>nav>ul>li>a:hover {
         height: 50px;
     }
 
-    .Menu img {
-        display: inline-block; /* Display the menu image */
-        width: 30px; /* Adjust width of the menu image */
-        height: 30px; /* Adjust height of the menu image */
-    }
+    /*.Menu img {
+        display: inline-block; !* Display the menu image *!
+        width: 50px; !* Adjust width of the menu image *!
+        height: 50px; !* Adjust height of the menu image *!
+    }*/
 
     /* Adjustments for other elements as needed */
     .pdetails>img {
