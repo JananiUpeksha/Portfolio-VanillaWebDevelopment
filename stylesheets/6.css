@@ -276,8 +276,8 @@
 }
 
 .img-circle img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 60%;
+    max-height: 60%;
 }
 
 footer {
@@ -415,7 +415,7 @@ footer p {
         margin-left: 250px;
     }
     .rectangle {
-        width: 330px;
+        width: 320px;
         height: 130px;
     }
 
@@ -484,7 +484,66 @@ footer p {
         max-height: 60%;
     }
     #details {
+        display: grid;
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: auto auto auto; /* Three rows */
+        grid-gap: 10px; /* Adjust gap as needed */
         margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #details #first-name,
+    #details #message,
+    #details #send-btn {
+        grid-column: span 1;
+        width: calc(100% - 20%); /* Adjust width to fit the single column */
+    }
+
+    /* Hide labels */
+    #details label {
+        display: none;
+    }
+
+    #details label[for="email"] {
+        display: inline-block;
+        position: absolute;
+        bottom: 410px;
+        margin-left: 20px;
+    }
+    #details label[for="message"] {
+        display: inline-block;
+        position: absolute;
+        bottom: 305px;
+        margin-left: 20px;
+    }
+    /* Rename first-name field to Name */
+    #details #first-name::placeholder {
+        content: 'Name';
+    }
+
+    #email{
+       bottom: 360px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    #message{
+        bottom: 200px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    #send-btn{
+        bottom: 150px;
+        position: absolute;
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    /* Hide other fields */
+    #details #second-name,
+    #details #first-name,
+    #details #no,
+    #details #other-field-2 { /* Replace with actual field IDs if they exist */
+        display: none;
     }
 
     footer {
@@ -494,9 +553,128 @@ footer p {
         margin-left: -25px; /* Adjust this value as needed to move the container to the left */
         display: none;
     }
-    #end{
+    #end {
         margin-right: 120px;
     }
+}
 
+@media (max-width: 475px) {
+    #help {
+        margin-left: 50px;
+    }
+
+    #contactme {
+        margin-left: 150px;
+    }
+    .rectangle {
+        width: 300px;
+        height: 80px;
+    }
+
+    .rectangle > p {
+        font-size: 18px;
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: repeat(4, auto); /* Four rows */
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .img-circle {
+        left: -15px; /* Adjust this value to move the image circle more towards the left */
+        width: 40px;
+        height: 40px;
+    }
+
+    .img-circle img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+    #details {
+        display: grid;
+        grid-template-columns: 1fr; /* One column */
+        grid-template-rows: auto auto auto; /* Three rows */
+        grid-gap: 10px; /* Adjust gap as needed */
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #details #first-name,
+    #details #message,
+    #details #send-btn {
+        grid-column: span 1;
+        width: calc(100% - 20%); /* Adjust width to fit the single column */
+    }
+
+    /* Hide labels */
+    #details label {
+        display: none;
+    }
+
+    #details label[for="email"] {
+        display: inline-block;
+        position: absolute;
+        bottom: 400px;
+        margin-left: 20px;
+    }
+    #details label[for="message"] {
+        display: inline-block;
+        position: absolute;
+        bottom: 300px;
+        margin-left: 20px;
+    }
+    /* Rename first-name field to Name */
+    #details #first-name::placeholder {
+        content: 'Name';
+    }
+
+    #email{
+        bottom: 340px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    #message{
+        bottom: 190px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    #send-btn{
+        bottom: 150px;
+        position: absolute;
+        width: 50px;
+        margin-left: 20px;
+    }
+
+    /* Hide other fields */
+    #details #second-name,
+    #details #first-name,
+    #details #no,
+    #details #other-field-2 { /* Replace with actual field IDs if they exist */
+        display: none;
+    }
+
+    footer {
+        height: 10px;
+    }
+    .images-container {
+        margin-left: -25px; /* Adjust this value as needed to move the container to the left */
+        display: none;
+    }
+    #end {
+        margin-right: 120px;
+    }
+}
+@media (max-width: 375px) {
+    #help {
+        margin-left: 50px;
+        font-size: 22px;
+    }
+
+    #contactme {
+        margin-left: 80px;
+    }
 }
 

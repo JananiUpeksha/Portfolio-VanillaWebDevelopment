@@ -7,6 +7,8 @@
     <list default="true" id="9c9bb906-6609-45cc-a1ce-bddacd1e9bf6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/3.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/6.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/6.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;css&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/janani/Desktop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/janani/Downloads/myportfolio-main&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -57,6 +59,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/lib" />
       <recent name="$PROJECT_DIR$/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HTML" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -111,6 +116,8 @@
       <workItem from="1716126062190" duration="12394000" />
       <workItem from="1716359817202" duration="9692000" />
       <workItem from="1716373922438" duration="1783000" />
+      <workItem from="1716377522187" duration="7893000" />
+      <workItem from="1716392224243" duration="4267000" />
     </task>
     <servers />
   </component>
