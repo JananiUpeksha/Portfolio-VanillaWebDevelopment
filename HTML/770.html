@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Grid</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e6e6e6;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #assignments {
+            display: grid;
+            grid-template-columns: repeat(4, 400px);
+            gap: 20px;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .card {
+            height: 250px;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .card:hover {
+            cursor: pointer;
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .card:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgba(150, 201, 61, 1));
+            z-index: 2;
+            transition: 0.5s all;
+            opacity: 0;
+        }
+        .card:hover:before {
+            opacity: 1;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .info {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            z-index: 3;
+            transition: bottom 0.3s ease-in-out;
+            opacity: 0;
+        }
+        .card:hover .info {
+            bottom: 0;
+            opacity: 1;
+        }
+        .info h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .info p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+        .info .btn {
+            display: inline-block;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: none;
+            color: bisque;
+            font-size: 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.4s ease-in-out;
+            margin-top: 10px;
+        }
+        .info .btn:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        @media screen and (max-width: 1440px) {
+            #assignments {
+                grid-template-columns: repeat(3, 300px);
+                gap: 15px;
+            }
+
+            .card {
+                height: 200px;
+            }
+
+            .info h1 {
+                font-size: 20px;
+            }
+
+            .info p {
+                font-size: 16px;
+            }
+
+            .info .btn {
+                font-size: 18px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            #assignments {
+                grid-template-columns: repeat(2, 300px);
+            }
+
+            .card {
+                height: 180px;
+            }
+
+            .info h1 {
+                font-size: 18px;
+            }
+
+            .info p {
+                font-size: 14px;
+            }
+
+            .info .btn {
+                font-size: 16px;
+            }
+        }
+        @media screen and (max-width: 770px) {
+            #assignments {
+                grid-template-columns: repeat(2, 300px);
+                gap: 15px;
+            }
+
+            .card {
+                height: 180px;
+            }
+
+            .info h1 {
+                font-size: 18px;
+            }
+
+            .info p {
+                font-size: 14px;
+            }
+
+            .info .btn {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 575px) {
+            #assignments {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                width: 80%;
+                height: 200px;
+                margin-left: 20px;
+            }
+
+            .info h1 {
+                font-size: 16px;
+            }
+
+            .info p {
+                font-size: 12px;
+            }
+
+            .info .btn {
+                font-size: 14px;
+            }
+        }
+        @media screen and (max-width: 424px) {
+            #assignments {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                width: 90%;
+                height: 180px;
+            }
+
+            .info h1 {
+                font-size: 14px;
+            }
+
+            .info p {
+                font-size: 12px;
+            }
+
+            .info .btn {
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .card {
+                height: 160px;
+            }
+
+            .info h1 {
+                font-size: 12px;
+            }
+
+            .info p {
+                font-size: 10px;
+            }
+
+            .info .btn {
+                font-size: 12px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<h1>Assignments</h1>
+<section id="assignments">
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="../assets/p1.jpeg" alt="Placeholder Image">
+        <div class="info">
+            <h1>Heading</h1>
+            <p>Sample text for card content.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </div>
+</section>
+</body>
+</html>

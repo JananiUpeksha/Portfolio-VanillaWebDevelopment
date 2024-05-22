@@ -1,0 +1,337 @@
+/*
+#assignments{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#assignments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.card img {
+    width: 100%; !* Ensure the image fills the card container *!
+    height: 100%; !* Ensure the image fills the card container *!
+    object-fit: cover; !* Maintain aspect ratio *!
+    transition: transform 0.3s ease;
+}
+.intro {
+    padding: 10px;
+    text-align: center;
+}
+.intro h1 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.intro p {
+    font-size: 0.9em;
+    color: #666;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card {
+    width: 400px;
+    height: 240px;
+    margin: 15px;
+    box-shadow: 5px 5px 20px #CC00FF;
+    position: relative;
+
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.intro {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgba(204, 0, 255, 0.5);
+    bottom: 0;
+    height: 60px;
+    transition: height 0.3s ease;
+}
+.card h1 {
+    margin: 10px;
+    font-size: 20px;
+}
+.card p {
+    font-size: 14px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card:hover {
+    cursor: pointer;
+}
+.card:hover .intro {
+    height: 170px;
+}
+.card:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img {
+    transform: scale(1.1) rotate(-3deg);
+}
+#topic1 {
+    font-size: 34px;
+    text-align: center;
+}
+#subtopic {
+    font-size: 24px;
+    text-align: center;
+}
+
+
+*/
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+#assignments {
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    gap: 20px;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+.card {
+    height: 250px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(204, 0, 255, 0.5), rgba(255, 255, 255, 0));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before {
+    opacity: 1;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+    z-index: 3;
+    transition: bottom 0.3s ease-in-out;
+    opacity: 0;
+}
+.card:hover .info {
+    bottom: 0;
+    opacity: 1;
+}
+.info h1 {
+    font-size: 24px;
+    margin: 0;
+}
+.info p {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+.info .btn {
+    display: inline-block;
+    padding: 10px;
+    background: linear-gradient(to bottom, rgba(204, 0, 255, 0.5), rgba(255, 255, 255, 0));
+    border: none;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin-top: 10px;
+}
+.info .btn:hover {
+    color:#CC00FF;
+    background-color: #e6e6e6;
+}
+#main{
+    font-size: 32px;
+    color:#CC00FF;
+}
+@media screen and (max-width: 1440px) {
+    #assignments {
+        grid-template-columns: repeat(3, 300px);
+        gap: 15px;
+    }
+
+    .card {
+        height: 200px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .info h1 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .info .btn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #assignments {
+        grid-template-columns: repeat(2, 300px);
+    }
+
+    .card {
+        height: 180px;
+    }
+
+    .info h1 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .info .btn {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 770px) {
+    #assignments {
+        grid-template-columns: repeat(2, 300px);
+        gap: 15px;
+    }
+
+    .card {
+        height: 180px;
+    }
+
+    .info h1 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .info .btn {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #assignments {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-left: -30px;
+        width: 200%;
+        height: 200px;
+    }
+
+    .info h1 {
+        font-size: 16px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .info .btn {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 425px) {
+    #assignments {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 170%;
+        height: 180px;
+    }
+
+    .info h1 {
+        font-size: 14px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .info .btn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        height: 160px;
+    }
+
+    .info h1 {
+        font-size: 12px;
+    }
+
+    .info p {
+        font-size: 10px;
+    }
+
+    .info .btn {
+        font-size: 12px;
+    }
+}
