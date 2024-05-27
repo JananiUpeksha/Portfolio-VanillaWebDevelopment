@@ -1,106 +1,116 @@
-/*
-body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0 ;
-}
-.recentProjects{
+#projects {
     display: flex;
-    justify-content: center; !* Center horizontally *!
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
+    overflow: hidden;
     height: 100vh;
-    background-color: aquamarine;
-
-}
-.recentProjects #topic{
-    position: absolute;
-    !*top: 40px;*!
-    top: 4350px;
-    color: #CC00FF;
-    font-size: 34px;
-    !*display: none;*!
+    transition: 0.25s;
+    width: 100vw;
 }
 
-.recentProjects #semitopic{
-    position: absolute;
-    !*top: 80px;*!
-    top: 4400px;
-    color: #6F5D85;
-    font-size: 34px;
-    !*display: none;*!
-}
-.image-slider {
-    position: relative;
-    width: 60%;
-}
-.slider{
+.cardsP {
     display: flex;
-    width: 500px; !* Adjust width to fit one image *!
-    overflow: hidden; !* Hide overflow *!
-    background-color: #FBF5FF;
-    margin-left: 345px; !*methnin position eka wens krnna*!
-}
-.slider>img{
+    max-width: 700px;
+    width: calc(100% - 100px);
     height: 400px;
-    flex-shrink: 0;
-    margin-right: 10px;
-    cursor: pointer; !* Add cursor pointer to images *!
 }
-.slider>img:last-child {
-    margin-right: 0;
-}
-.slider>input{
+
+.cardsP input[type="radio"] {
     display: none;
 }
-.navigation-circle{
+
+.cardsP .cardProject .info .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cardsP .cardProject .label .icon {
     display: flex;
     justify-content: center;
-    margin: 5px;
-}
-.navigation-circle > label{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: solid #CC00FF 3px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 5px;
-    margin-top: 15px;
-}
-.navigation-circle > label:hover{
-    background-color:  #CC00FF;;
-}
-#img1:checked ~ .m1 {
-    margin-left: 3%;
-}
-#img2:checked ~ .m2 {
-    margin-left: -95%; !* Adjust the value based on the width of one image *!
-}
-#img3:checked ~ .m3 {
-    margin-left: -190%; !* Adjust the value based on the width of one image *!
-}
-#img4:checked ~ .m4 {
-    margin-left: -290%; !* Adjust the value based on the width of one image *!
-}
-#githubLink {
-    display: none; !* Initially hidden *!
-    margin-top: 0; !* Reset margin-top *!
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
+    align-items: center;
+    min-width: 40px;
     height: 40px;
-    font-size: 28px;
-    background-color: #CC00FF;
-    border-radius: 10px;
-    color: snow;
-}
-#githubLink:hover{
     background-color: white;
     color: #CC00FF;
-    border: 3px solid #CC00FF;
-    cursor: pointer;
-}*/
+    border-radius: 50%;
+}
 
+.cardsP .cardProject .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    white-space: pre;
+    transition: 1s ;
+}
+.cards .card .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.cardsP label.cardProject {
+    position: relative;
+    min-width: 60px;
+    background: var(--bg);
+    overflow: hidden;
+    margin: 5px;
+    background-size: auto 150%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s ;
+    border-radius: 30px;
+}
+
+.cardsP label.cardProject .label {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 40px;
+    transition: 0.5s ;
+}
+
+.cardsP input[type="radio"]:checked + label.cardProject {
+    flex-grow: 10000;
+    background-size: auto 100%;
+}
+
+.cardsP input[type="radio"]:checked + label.cardProject .label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.cardsP input[type="radio"]:checked + label.cardProject .info {
+    opacity: 1;
+}
+
+.cardsP label.cardProject .info {
+    opacity: 0;
+}
+
+.cardsP label.cardProject:not(:checked) .label {
+    bottom: 10px;
+    left: 10px;
+}
+.link-btnP {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none;
+}
+input:checked + label .link-btnP {
+    display: block;
+}
+#projects p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    color: #CC00FF;
+}

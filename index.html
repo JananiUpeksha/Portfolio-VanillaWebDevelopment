@@ -422,35 +422,67 @@
 </section>
 
 <!----------Recent Projects------------>
-<!--<div class="recentProjects">
-   &lt;!&ndash; <div id="topic">Recent Projects </div>
-    <div id="semitopic">Go through my previous work </div>&ndash;&gt;
-
-
-    <div class="image-slider">
-        <div class="slider">
-            <input type="radio" name="slide" id="img1" checked>
-            <input type="radio" name="slide" id="img2">
-            <input type="radio" name="slide" id="img3">
-            <input type="radio" name="slide" id="img4">
-
-            <img src="assets/01.png" class="m1" alt="project1">
-            <img src="assets/02.png" class="m2" alt="project2">
-            <img src="assets/03.png" class="m3" alt="project3" >
-            <img src="assets/04.png" class="m4" alt="project4" >
-        </div>
-        <div class="navigation-circle">
-            <label for="img1" ></label>
-            <label for="img2" ></label>
-            <label for="img3" ></label>
-            <label for="img4" ></label>
-        </div>
-    </div>
-    <br>
-    <button id="githubLink">GitHub Repository</button>
-</div>-->
 <section id="recentprojects">
+    <section id="projects">
+        <p>Recently Done Projects</p>
+        <div class="cardsP">
+            <input type="radio" id="card1" name="card" checked>
+            <label for="card1" class="cardProject" style="--bg: url(../assets/01.png)">
+                <div class="label">
+                    <div class="icon" style="--color: green">
+                        1
+                    </div>
+                    <div class="info">
+                        <div class="title">Spring</div>
+                        <div>Nature Looks Attractive</div>
+                    </div>
+                </div>
+                <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+            </label>
 
+            <input type="radio" id="card2" name="card">
+            <label for="card2" class="cardProject" style="--bg: url(../assets/02.png)">
+                <div class="label">
+                    <div class="icon" style="--color: blue">
+                        2
+                    </div>
+                    <div class="info">
+                        <div class="title">Summer</div>
+                        <div>Summer is a State of Mind</div>
+                    </div>
+                </div>
+                <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+            </label>
+
+            <input type="radio" id="card3" name="card">
+            <label for="card3" class="cardProject" style="--bg: url(../assets/03.png)">
+                <div class="label">
+                    <div class="icon" style="--color: orange">
+                        3
+                    </div>
+                    <div class="info">
+                        <div class="title">Autumn</div>
+                        <div>Life Starts All Over Again</div>
+                    </div>
+                </div>
+                <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+            </label>
+
+            <input type="radio" id="card4" name="card">
+            <label for="card4" class="cardProject" style="--bg: url(../assets/04.png)">
+                <div class="label">
+                    <div class="icon" style="--color: black">
+                        4
+                    </div>
+                    <div class="info">
+                        <div class="title">Winter</div>
+                        <div>Not a Season, It's Celebration</div>
+                    </div>
+                </div>
+                <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+            </label>
+        </div>
+    </section>
 </section>
 
 
@@ -490,7 +522,7 @@
         <div id="details">
             <div>
                 <label for="first-name">First Name</label> <br>
-                <input type="text" id="first-name" placeholder="">
+                <input type="text" id="first-name">
             </div>
             <div>
                 <label for="second-name">Second Name</label><br>
@@ -506,7 +538,7 @@
             </div>
             <div>
                 <label for="contact">Contact No</label><br>
-                <input type="text" id="no">
+                <label for="no"></label><input type="text" id="no">
             </div>
             <button id="send-btn">Send It</button>
         </div>

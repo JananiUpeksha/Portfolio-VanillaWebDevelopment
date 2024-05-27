@@ -3,8 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #projects {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 100vh;
+            font-family: "Roboto", sans-serif;
+            transition: 0.25s;
+            width: 100vw;
+        }
+
+        .cardsP {
+            display: flex;
+            max-width: 700px;
+            width: calc(100% - 100px);
+            height: 400px;
+        }
+
+        .cardsP input[type="radio"] {
+            display: none;
+        }
+
+        .cardsP .cardProject .info .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .cardsP .cardProject .label .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 40px;
+            height: 40px;
+            background-color: white;
+            color: var(--color);
+            border-radius: 50%;
+        }
+
+        .cardsP .cardProject .label .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+            white-space: pre;
+            transition: 1s ;
+        }
+
+        .cardsP label.cardProject {
+            position: relative;
+            min-width: 60px;
+            background: var(--bg);
+            overflow: hidden;
+            margin: 5px;
+            background-size: auto 150%;
+            background-position: center;
+            cursor: pointer;
+            transition: 0.5s ;
+            border-radius: 30px;
+        }
+
+        .cardsP label.cardProject .label {
+            display: flex;
+            position: absolute;
+            right: 0;
+            height: 40px;
+            transition: 0.5s ;
+        }
+
+        .cardsP input[type="radio"]:checked + label.cardProject {
+            flex-grow: 10000;
+            background-size: auto 100%;
+        }
+
+        .cardsP input[type="radio"]:checked + label.cardProject .label {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .cardsP input[type="radio"]:checked + label.cardProject .info {
+            opacity: 1;
+        }
+
+        .cardsP label.cardProject .info {
+            opacity: 0;
+        }
+
+        .cardsP label.cardProject:not(:checked) .label {
+            bottom: 10px;
+            left: 10px;
+        }
+        .link-btnP {
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: none;
+        }
+        input:checked + label .link-btnP {
+            display: block;
+        }
+        #projects p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 32px;
+        }
+    </style>
 </head>
 <body>
+<section id="projects">
+    <p>Recently Done Projects</p>
+    <div class="cardsP">
+        <input type="radio" id="card1" name="card" checked>
+        <label for="card1" class="cardProject" style="--bg: url(../assets/01.png)">
+            <div class="label">
+                <div class="icon" style="--color: green">
+                    1
+                </div>
+                <div class="info">
+                    <div class="title">Spring</div>
+                    <div>Nature Looks Attractive</div>
+                </div>
+            </div>
+            <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+        </label>
 
+        <input type="radio" id="card2" name="card">
+        <label for="card2" class="cardProject" style="--bg: url(../assets/02.png)">
+            <div class="label">
+                <div class="icon" style="--color: blue">
+                    2
+                </div>
+                <div class="info">
+                    <div class="title">Summer</div>
+                    <div>Summer is a State of Mind</div>
+                </div>
+            </div>
+            <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+        </label>
+
+        <input type="radio" id="card3" name="card">
+        <label for="card3" class="cardProject" style="--bg: url(../assets/03.png)">
+            <div class="label">
+                <div class="icon" style="--color: orange">
+                    3
+                </div>
+                <div class="info">
+                    <div class="title">Autumn</div>
+                    <div>Life Starts All Over Again</div>
+                </div>
+            </div>
+            <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+        </label>
+
+        <input type="radio" id="card4" name="card">
+        <label for="card4" class="cardProject" style="--bg: url(../assets/04.png)">
+            <div class="label">
+                <div class="icon" style="--color: black">
+                    4
+                </div>
+                <div class="info">
+                    <div class="title">Winter</div>
+                    <div>Not a Season, It's Celebration</div>
+                </div>
+            </div>
+            <label class="link-btnP"><img src="../assets/link.png" alt="Link Image"></label>
+        </label>
+    </div>
+</section>
 </body>
 </html>
