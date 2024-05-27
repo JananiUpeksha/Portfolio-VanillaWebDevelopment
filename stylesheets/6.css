@@ -378,6 +378,12 @@ footer p {
     border: 1px solid #CC00FF;
     background-color: #CC00FF;
     color: snow;
+    font-family: "BioRhyme", serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
 }
 
 #send-btn:hover {
@@ -669,7 +675,7 @@ footer p {
 }
 @media (max-width: 375px) {
     #help {
-        margin-left: 50px;
+        margin-left: 35px;
         font-size: 22px;
     }
 

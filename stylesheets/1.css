@@ -117,6 +117,7 @@ header>section>nav>ul>li>a:hover {
     background-color: #CC00FF;
     font-size: 18px;
     color: white;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
 
 
 }
@@ -146,7 +147,7 @@ header>section>nav>ul>li>a:hover {
     background-color: #CC00FF;
     font-size: 18px;
     color: white;
-
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .pdetails{

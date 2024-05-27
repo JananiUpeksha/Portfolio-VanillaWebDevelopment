@@ -143,6 +143,9 @@ svg {
         stroke-dashoffset: var(--offset); /* Move the stroke-dash based on percentage */
     }
 }
+:root {
+    --offset: 50%; /* Define the --offset custom property */
+}
 /*-----------------------------media queries----------------------------------------*/
 @media screen and (max-width: 1440px) {
     /* Adjustments for screens up to 1440px */
