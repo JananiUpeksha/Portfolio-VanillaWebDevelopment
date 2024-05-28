@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c9bb906-6609-45cc-a1ce-bddacd1e9bf6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +21,7 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -44,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;css&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/janani/Desktop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/janani/IdeaProjects/my-profile/assets&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -122,6 +122,8 @@
       <workItem from="1716539798144" duration="3320000" />
       <workItem from="1716607143292" duration="2967000" />
       <workItem from="1716712193398" duration="5000" />
+      <workItem from="1716784203729" duration="11076000" />
+      <workItem from="1716827947342" duration="591000" />
     </task>
     <servers />
   </component>

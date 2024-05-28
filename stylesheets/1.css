@@ -347,6 +347,15 @@ header>section>nav>ul>li>a:hover {
 }
 
 @media (max-width: 425px) {
+    #navbar {
+        display: none;
+        flex-direction: column;
+    }
+
+    .Menu {
+        display: block;
+        cursor: pointer;
+    }
     header>section>nav {
         display: none; /* Hide the nav bar */
     }
