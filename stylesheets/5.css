@@ -114,3 +114,25 @@ input:checked + label .link-btnP {
     font-size: 32px;
     color: #CC00FF;
 }
+@media (max-width: 565px) {
+    .infoP div {
+        display: none;
+    }
+}
+@media (max-width: 425px) {
+    .infoP div {
+        display: none;
+    }
+    .cardsP {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        width: 90%;
+    }
+
+    .cardsP label.cardProject {
+        flex-grow: unset;
+        width: 100%;
+        height: 200px; /* Adjust height as needed */
+    }
+}

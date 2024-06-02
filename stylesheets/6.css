@@ -513,13 +513,13 @@ footer p {
     #details label[for="email"] {
         display: inline-block;
         position: absolute;
-        bottom: 410px;
+        bottom: 385px;
         margin-left: 20px;
     }
     #details label[for="message"] {
         display: inline-block;
         position: absolute;
-        bottom: 305px;
+        bottom: 295px;
         margin-left: 20px;
     }
     /* Rename first-name field to Name */
@@ -528,17 +528,17 @@ footer p {
     }
 
     #email{
-       bottom: 360px;
+       bottom: 330px;
         position: absolute;
         margin-left: 20px;
     }
     #message{
-        bottom: 200px;
+        bottom: 190px;
         position: absolute;
         margin-left: 20px;
     }
     #send-btn{
-        bottom: 150px;
+        bottom: 140px;
         position: absolute;
         width: 50px;
         margin-left: 20px;
@@ -564,13 +564,14 @@ footer p {
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 425px) {
     #help {
         margin-left: 50px;
+        font-size: 24px;
     }
 
     #contactme {
-        margin-left: 150px;
+        margin-left: 140px;
     }
     .rectangle {
         width: 300px;
@@ -623,13 +624,13 @@ footer p {
     #details label[for="email"] {
         display: inline-block;
         position: absolute;
-        bottom: 400px;
+        bottom: 375px;
         margin-left: 20px;
     }
     #details label[for="message"] {
         display: inline-block;
         position: absolute;
-        bottom: 300px;
+        bottom: 285px;
         margin-left: 20px;
     }
     /* Rename first-name field to Name */
@@ -638,17 +639,17 @@ footer p {
     }
 
     #email{
-        bottom: 340px;
+        bottom: 320px;
         position: absolute;
         margin-left: 20px;
     }
     #message{
-        bottom: 190px;
+        bottom: 180px;
         position: absolute;
         margin-left: 20px;
     }
     #send-btn{
-        bottom: 150px;
+        bottom: 130px;
         position: absolute;
         width: 50px;
         margin-left: 20px;
@@ -675,12 +676,41 @@ footer p {
 }
 @media (max-width: 375px) {
     #help {
-        margin-left: 35px;
+        margin-left: 40px;
         font-size: 22px;
     }
 
     #contactme {
-        margin-left: 80px;
+        margin-left: 100px;
     }
+    #email{
+        bottom: 325px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    #message{
+        bottom: 180px;
+        position: absolute;
+        margin-left: 20px;
+    }
+    #send-btn{
+        bottom: 130px;
+        position: absolute;
+        width: 50px;
+        margin-left: 20px;
+    }
+    #details label[for="email"] {
+        display: inline-block;
+        position: absolute;
+        bottom: 380px;
+        margin-left: 20px;
+    }
+    #details label[for="message"] {
+        display: inline-block;
+        position: absolute;
+        bottom: 285px;
+        margin-left: 20px;
+    }
+
 }
 
