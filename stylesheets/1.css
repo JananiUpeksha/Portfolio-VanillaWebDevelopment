@@ -566,7 +566,7 @@ header>section>nav>ul>li>a:hover {
     }
 
     header > section > nav ul li .Menu img {
-        display: inline-block; /* Display the menu image */
+        display: block; /* Display the menu image */
         width: 150px; /* Adjust width of the menu image */
         height: 150px; /* Adjust height of the menu image */
     }

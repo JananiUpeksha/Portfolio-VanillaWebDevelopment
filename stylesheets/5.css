@@ -114,6 +114,9 @@ input:checked + label .link-btnP {
     font-size: 32px;
     color: #CC00FF;
 }
+
+
+
 @media (max-width: 565px) {
     .infoP div {
         display: none;
