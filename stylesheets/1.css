@@ -97,7 +97,7 @@ header>section>nav>ul>li>a:hover {
 }
 #homePcontainer{
     width: 1000px;
-    height: 200px;
+    height: 120px;
     margin-left: 40px;
     margin-bottom: 60px;
 
@@ -207,7 +207,7 @@ header>section>nav>ul>li>a:hover {
 
     #homePcontainer {
         width: 700px;
-        height: 300px;
+        height: 160px;
         margin-left: 40px;
         margin-bottom: 80px;
     }
@@ -265,7 +265,7 @@ header>section>nav>ul>li>a:hover {
     }
     #homePcontainer{
         width: 600px;
-        height: 300px;
+        height: 180px;
         margin-left: 40px;
         margin-bottom: 60px;
     }
@@ -322,7 +322,7 @@ header>section>nav>ul>li>a:hover {
 
     #homePcontainer {
         width: 400px;
-        height: 500px;
+        height: 270px;
         margin-left: 40px;
         margin-bottom: 60px;
     }
@@ -346,118 +346,21 @@ header>section>nav>ul>li>a:hover {
     }
 }
 
-@media (max-width: 425px) {
-    #navbar {
-        display: none;
-        flex-direction: column;
-    }
-
-    .Menu {
-        display: block;
-        cursor: pointer;
-    }
-    header>section>nav {
-        display: none; /* Hide the nav bar */
-    }
-    #logo {
-        position: absolute;
-        top:0; /* Adjust the top position as needed */
-        left: 0; /* Adjust the left position as needed */
-    }
-
-    #logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .Menu img {
-        display: inline-block; /* Display the menu image */
-        width: 30px; /* Adjust width of the menu image */
-        height: 30px; /* Adjust height of the menu image */
-    }
-
-    /* Adjustments for other elements as needed */
-    .pdetails>img {
-        /* Adjust styles for profile photo */
-        width: 330px;
-        top: 140px;
-        left: 50px;
-        height: auto;
-    }
-
-    #hello {
-        /* Adjust styles for greeting */
-        padding-top: 80px;
-        font-size: 20px;
-        position: absolute;
-        left: 0px;
-        top: -80px;
-    }
-
-    #iam {
-        /* Adjust styles for name */
-        font-size: 18px;
-        position: absolute;
-        top: 50px;
-        left: 0px; /* Ensure both are aligned to the left */
-    }
-
-    #janani {
-        /* Adjust styles for name */
-        font-size: 18px;
-        position: absolute;
-        top: 50px;
-        left: 80px; /* Adjust the left position for spacing */
-    }
-
-
-    #fsd {
-        /* Adjust styles for designation */
-        font-size: 16px;
-        position: absolute;
-        top: 75px;
-        left: 0px;
-    }
-
-    #homeP {
-        /* Adjust styles for description */
-        font-size: 16px;
-    }
-
-    #homePcontainer {
-        /* Adjust styles for container */
-        width: 330px;
-        height: 350px;
-        margin-left: 20px;
-        margin-bottom: 40px;
-        position: absolute;
-        top: 420px;
-        left: 20px;
-    }
-
-    #download {
-        /* Adjust styles for download button */
-        font-size: 12px;
-        width: 120px;
-        margin-bottom: 100px;
-        position: absolute;
-        top: 600px;
-        left: 180px;
-    }
-
-    #hireme {
-        /* Adjust styles for hire me button */
-        font-size: 12px;
-        width: 120px;
-        margin-bottom: 100px;
-        position: absolute;
-        top: 600px;
-        left: 50px;
-    }
-}
 @media (max-width: 565px) {
     header>section>nav {
         display: none; /* Hide the nav bar */
+    }
+    header>section>nav>ul>li{
+        display: block;
+        margin-right: 20px;
+        font-size: 20px;
+        margin-top: 5px;
+        border: 2px solid #CC00FF;
+        padding: 5px 10px; /* Padding inside the box */
+        border-radius: 5px; /* Rounded corners */
+    }
+    header > section > nav > ul > li:first-child {
+        margin-top: 270px;
     }
     #logo {
         position: absolute;
@@ -481,7 +384,7 @@ header>section>nav>ul>li>a:hover {
         /* Adjust styles for profile photo */
         width: 300px;
         top: 140px;
-        left: 110px;
+        left: 90px;
         height: auto;
     }
 
@@ -527,7 +430,7 @@ header>section>nav>ul>li>a:hover {
     #homePcontainer {
         /* Adjust styles for container */
         width: 480px;
-        height: 350px;
+        height: 150px;
         margin-left: 20px;
         margin-bottom: 40px;
         position: absolute;
@@ -556,19 +459,21 @@ header>section>nav>ul>li>a:hover {
     }
 
 }
-
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     header>section>nav {
         display: none; /* Hide the nav bar */
     }
-    header > section > nav .Menu {
-        display: block; /* Ensure the menu image is displayed */
+    header>section>nav>ul>li{
+        display: block;
+        margin-right: 20px;
+        font-size: 16px;
+        margin-top: 5px;
+        border: 1px solid #CC00FF;
+        padding: 3px 10px; /* Padding inside the box */
+        border-radius: 5px; /* Rounded corners */
     }
-
-    header > section > nav ul li .Menu img {
-        display: block; /* Display the menu image */
-        width: 150px; /* Adjust width of the menu image */
-        height: 150px; /* Adjust height of the menu image */
+    header > section > nav > ul > li:first-child {
+        margin-top: 200px;
     }
     #logo {
         position: absolute;
@@ -591,9 +496,122 @@ header>section>nav>ul>li>a:hover {
     .pdetails>img {
         /* Adjust styles for profile photo */
         width: 300px;
-        top: 120px;
+        top: 160px;
+        left: 50px;
+        height: 290px;
+    }
+
+    #hello {
+        /* Adjust styles for greeting */
+        padding-top: 80px;
+        font-size: 20px;
+        position: absolute;
+        left: -20px;
+        top: -80px;
+    }
+
+    #iam {
+        /* Adjust styles for name */
+        font-size: 18px;
+        position: absolute;
+        top: 50px;
+        left: -20px; /* Ensure both are aligned to the left */
+    }
+
+    #janani {
+        /* Adjust styles for name */
+        font-size: 18px;
+        position: absolute;
+        top: 50px;
+        left: 60px; /* Adjust the left position for spacing */
+    }
+
+
+    #fsd {
+        /* Adjust styles for designation */
+        font-size: 16px;
+        position: absolute;
+        top: 75px;
+        left: -20px;
+    }
+
+    #homeP {
+        /* Adjust styles for description */
+        font-size: 16px;
+    }
+
+    #homePcontainer {
+        /* Adjust styles for container */
+        width: 360px;
+        height: 150px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        position: absolute;
+        top: 385px;
+        left: 10px;
+    }
+
+    #download {
+        /* Adjust styles for download button */
+        font-size: 12px;
+        width: 120px;
+        margin-bottom: 100px;
+        position: absolute;
+        top: 560px;
+        left: 145px;
+    }
+
+    #hireme {
+        /* Adjust styles for hire me button */
+        font-size: 12px;
+        width: 120px;
+        margin-bottom: 100px;
+        position: absolute;
+        top: 560px;
+        left: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    header>section>nav {
+        display: none; /* Hide the nav bar */
+    }
+    header>section>nav>ul>li{
+        display: block;
+        margin-right: 20px;
+        font-size: 16px;
+        margin-top: 5px;
+        border: 1px solid #CC00FF;
+        padding: 3px 10px; /* Padding inside the box */
+        border-radius: 5px; /* Rounded corners */
+    }
+    header > section > nav > ul > li:first-child {
+        margin-top: 200px;
+    }
+    #logo {
+        position: absolute;
+        top:0; /* Adjust the top position as needed */
+        left: 0; /* Adjust the left position as needed */
+    }
+
+    #logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /*.Menu img {
+        display: inline-block; !* Display the menu image *!
+        width: 50px; !* Adjust width of the menu image *!
+        height: 50px; !* Adjust height of the menu image *!
+    }*/
+
+    /* Adjustments for other elements as needed */
+    .pdetails>img {
+        /* Adjust styles for profile photo */
+        width: 300px;
+        top: 160px;
         left: 33px;
-        height: auto;
+        height: 300px;
     }
 
     #hello {
@@ -642,7 +660,7 @@ header>section>nav>ul>li>a:hover {
         margin-left: 20px;
         margin-bottom: 40px;
         position: absolute;
-        top: 365px;
+        top: 385px;
         left: 10px;
     }
 
@@ -652,7 +670,7 @@ header>section>nav>ul>li>a:hover {
         width: 120px;
         margin-bottom: 100px;
         position: absolute;
-        top: 540px;
+        top: 560px;
         left: 145px;
     }
 
@@ -662,7 +680,7 @@ header>section>nav>ul>li>a:hover {
         width: 120px;
         margin-bottom: 100px;
         position: absolute;
-        top: 540px;
+        top: 560px;
         left: 30px;
     }
 }

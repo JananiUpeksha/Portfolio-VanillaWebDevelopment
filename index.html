@@ -40,6 +40,17 @@
             scroll-behavior: smooth; !* Enable smooth scrolling *!
         }
 */
+       body {
+           overflow: auto; /* Ensure the body can scroll */
+       }
+
+       section {
+           overflow: visible; /* Ensure sections can scroll */
+           height: auto; /* Ensure sections are not fixed height */
+       }
+       .home{
+           display: block;
+       }
 
     </style>
 </head>
@@ -53,12 +64,18 @@
             </div>
             <nav id="navbar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutMe">About</a></li>
-                    <li><a href="#Assignments">Assignments</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Service">Service</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+                    <!--<li id="navHome" >Home</li>
+                    <li id="navAboutMe">About</li>
+                    <li id="navAssignments">Assignments</li>
+                    <li id="navProjects">Projects</li>
+                    <li id="navSkilla">Skills</li>
+                    <li id="navContact">Contact</li>-->
+                    <li id="navHome"><a href="#">Home</a></li>
+                    <li id="navAboutMe"><a href="#">About</a></li>
+                    <li id="navAssignments"><a href="#">Assignments</a></li>
+                    <li id="navProjects"><a href="#">Projects</a></li>
+                    <li id="navSkills"><a href="#">Skills</a></li>
+                    <li id="navContact"><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="Menu">
@@ -86,7 +103,7 @@
         <div id="who">
             <p>Who am I</p>
         </div>
-        <div id="first" data-aos="flip-up">
+        <div id="first" >
             <p>A passionate Full Stack Developer. I bring creativity and technical expertise to every project. Seeking opportunities to contribute and grow in a dynamic development environment with a commitment to excellence.</p>
         </div>
         <div id="second">
@@ -480,7 +497,114 @@
     AOS.init();
 </script>
 <script src="js.js"></script>
-<script></script>
+<script>
+
+    /*$('#navHome').on('click',() => {
+        $('.home').css({display:'block'});
+        $('.aboutMe').css({display:'none'});
+        $('#assignments1').css({display:'none'});
+        $('.skills').css({display:'none'});
+        $('#recentprojects').css({display:'none'});
+        $('.contact').css({display:'none'});
+    });
+    $('#navAboutMe').on('click',() => {
+        $('.home').css({display:'none'});
+        $('.aboutMe').css({display:'block'});
+        $('#assignments1').css({display:'none'});
+        $('.skills').css({display:'none'});
+        $('#recentprojects').css({display:'none'});
+        $('.contact').css({display:'none'});
+    });
+   $('#navAssignments').on('click',() => {
+       $('.home').css({display:'none'});
+       $('.aboutMe').css({display:'none'});
+       $('#assignments1').css({display:'block'});
+       $('.skills').css({display:'none'});
+       $('#recentprojects').css({display:'none'});
+       $('.contact').css({display:'none'});
+   });
+   $('#navSkilla').on('click',() => {
+       $('.home').css({display:'none'});
+       $('.aboutMe').css({display:'none'});
+       $('#assignments1').css({display:'none'});
+       $('.skills').css({display:'block'});
+       $('#recentprojects').css({display:'none'});
+       $('.contact').css({display:'none'});
+   });
+   $('#navProjects').on('click',() => {
+       $('.home').css({display:'none'});
+       $('.aboutMe').css({display:'none'});
+       $('#assignments1').css({display:'none'});
+       $('.skills').css({display:'none'});
+       $('#recentprojects').css({display:'block'});
+       $('.contact').css({display:'none'});
+   });
+   $('#navContact').on('click',() => {
+       $('.home').css({display:'none'});
+       $('.aboutMe').css({display:'none'});
+       $('#assignments1').css({display:'none'});
+       $('.skills').css({display:'none'});
+       $('#recentprojects').css({display:'none'});
+       $('.contact').css({display:'block'});
+   });
+*/
+    $(document).ready(() => {
+        // Show home section by default
+        $('.home').css({display: 'block'});
+
+        // Set up click handlers for navigation items
+        $('#navHome').on('click', () => {
+            $('.home').css({display: 'block'});
+            $('.aboutMe').css({display: 'none'});
+            $('#assignments1').css({display: 'none'});
+            $('.skills').css({display: 'none'});
+            $('#recentprojects').css({display: 'none'});
+            $('.contact').css({display: 'none'});
+        });
+        $('#navAboutMe').on('click', () => {
+            $('.home').css({display: 'none'});
+            $('.aboutMe').css({display: 'block'});
+            $('#assignments1').css({display: 'none'});
+            $('.skills').css({display: 'none'});
+            $('#recentprojects').css({display: 'none'});
+            $('.contact').css({display: 'none'});
+        });
+        $('#navAssignments').on('click', () => {
+            $('.home').css({display: 'none'});
+            $('.aboutMe').css({display: 'none'});
+            $('#assignments1').css({display: 'block'});
+            $('.skills').css({display: 'none'});
+            $('#recentprojects').css({display: 'none'});
+            $('.contact').css({display: 'none'});
+        });
+        $('#navSkilla').on('click', () => {
+            $('.home').css({display: 'none'});
+            $('.aboutMe').css({display: 'none'});
+            $('#assignments1').css({display: 'none'});
+            $('.skills').css({display: 'block'});
+            $('#recentprojects').css({display: 'none'});
+            $('.contact').css({display: 'none'});
+        });
+        $('#navProjects').on('click', () => {
+            $('.home').css({display: 'none'});
+            $('.aboutMe').css({display: 'none'});
+            $('#assignments1').css({display: 'none'});
+            $('.skills').css({display: 'none'});
+            $('#recentprojects').css({display: 'block'});
+            $('.contact').css({display: 'none'});
+        });
+        $('#navContact').on('click', () => {
+            $('.home').css({display: 'none'});
+            $('.aboutMe').css({display: 'none'});
+            $('#assignments1').css({display: 'none'});
+            $('.skills').css({display: 'none'});
+            $('#recentprojects').css({display: 'none'});
+            $('.contact').css({display: 'block'});
+        });
+    });
+
+
+</script>
 
 
 </body>
