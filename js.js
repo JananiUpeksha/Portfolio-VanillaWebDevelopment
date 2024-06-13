@@ -138,7 +138,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
+document.getElementById('download').addEventListener('click', function() {
+    const googleDriveUrl = 'https://drive.google.com/drive/folders/1bZy7ejlNyY2WnfpfQQ7ZjG-3JGHWRik_?usp=sharing';
+    window.location.href = googleDriveUrl;
+});
+document.getElementById('hireme').addEventListener('click', function() {
+    const contactSection = document.querySelector('.contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+});
 
 
 

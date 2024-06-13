@@ -36,17 +36,13 @@
     <link rel="stylesheet" href="stylesheets/5.css">
     <link rel="stylesheet" href="stylesheets/6.css">
     <style>
-       /* body {
-            scroll-behavior: smooth; !* Enable smooth scrolling *!
-        }
-*/
        body {
-           overflow: auto; /* Ensure the body can scroll */
+           overflow: auto;
        }
 
        section {
-           overflow: visible; /* Ensure sections can scroll */
-           height: auto; /* Ensure sections are not fixed height */
+           overflow: visible;
+           height: auto;
        }
        .home{
            display: block;
@@ -153,7 +149,7 @@
             <div class="info">
                 <h1>Assignment01</h1>
                 <p>Sitemap, Mockups & wireframe for portfolio.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://www.figma.com/design/sjlF9AwDKLB2kt5eo79RnH/Profile-Desktop?node-id=0-1">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -161,7 +157,7 @@
             <div class="info">
                 <h1>Assignment02</h1>
                 <p>Html Structure for portfolio.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha"> Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/my-profile"> Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -169,7 +165,7 @@
             <div class="info">
                 <h1>Assignment03</h1>
                 <p>Assignmentt regarding CSS positioning and BoxModels.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/CSS-Assignments">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -177,7 +173,7 @@
             <div class="info">
                 <h1>Assignment04</h1>
                 <p>Assignmentt regarding Animation and Transition.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/CSS-Assignments">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -185,7 +181,7 @@
             <div class="info">
                 <h1>Assignment05</h1>
                 <p>Apply CSS to Portfolio.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/my-profile/tree/css">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -193,7 +189,7 @@
             <div class="info">
                 <h1>Assignment06</h1>
                 <p>Sitemap,mockups & figma for POSS Syste using Bootstrap.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/CSS-poss">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -201,7 +197,7 @@
             <div class="info">
                 <h1>Assignment07</h1>
                 <p>Convert POSS system to Single Page Application</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/CSS-poss">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -209,7 +205,7 @@
             <div class="info">
                 <h1>Assignment08</h1>
                 <p>Assignmentt regarding Que Processing.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/Jscript-Assignments">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -217,7 +213,7 @@
             <div class="info">
                 <h1>Assignment09</h1>
                 <p>Knight Rider lightning System</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/Jscript-Assignments">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -225,7 +221,7 @@
             <div class="info">
                 <h1>Assignment10</h1>
                 <p>Calculator using JS.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/Jscript-Assignments">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -233,7 +229,7 @@
             <div class="info">
                 <h1>Assignment11</h1>
                 <p>Complete POSS system Using JS.</p>
-                <a href="#" class="btn" data-url="https://github.com/jananiupeksha">Learn More</a>
+                <a href="#" class="btn" data-url="https://github.com/JananiUpeksha/CSS-poss">Learn More</a>
             </div>
         </div>
         <div class="card">
@@ -447,11 +443,11 @@
             </div>
             <div id="msg">
                 <label for="message">Message</label><br>
-                <textarea id="message" rows="8" cols="60"></textarea>
+                <textarea id="message" rows="8" cols="60" required></textarea>
             </div>
             <div>
                 <label for="email">E-mail</label><br>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
             </div>
             <div>
                 <label for="contact">Contact No</label><br>
@@ -498,111 +494,41 @@
 </script>
 <script src="js.js"></script>
 <script>
-
-    /*$('#navHome').on('click',() => {
-        $('.home').css({display:'block'});
-        $('.aboutMe').css({display:'none'});
-        $('#assignments1').css({display:'none'});
-        $('.skills').css({display:'none'});
-        $('#recentprojects').css({display:'none'});
-        $('.contact').css({display:'none'});
-    });
-    $('#navAboutMe').on('click',() => {
-        $('.home').css({display:'none'});
-        $('.aboutMe').css({display:'block'});
-        $('#assignments1').css({display:'none'});
-        $('.skills').css({display:'none'});
-        $('#recentprojects').css({display:'none'});
-        $('.contact').css({display:'none'});
-    });
-   $('#navAssignments').on('click',() => {
-       $('.home').css({display:'none'});
-       $('.aboutMe').css({display:'none'});
-       $('#assignments1').css({display:'block'});
-       $('.skills').css({display:'none'});
-       $('#recentprojects').css({display:'none'});
-       $('.contact').css({display:'none'});
-   });
-   $('#navSkilla').on('click',() => {
-       $('.home').css({display:'none'});
-       $('.aboutMe').css({display:'none'});
-       $('#assignments1').css({display:'none'});
-       $('.skills').css({display:'block'});
-       $('#recentprojects').css({display:'none'});
-       $('.contact').css({display:'none'});
-   });
-   $('#navProjects').on('click',() => {
-       $('.home').css({display:'none'});
-       $('.aboutMe').css({display:'none'});
-       $('#assignments1').css({display:'none'});
-       $('.skills').css({display:'none'});
-       $('#recentprojects').css({display:'block'});
-       $('.contact').css({display:'none'});
-   });
-   $('#navContact').on('click',() => {
-       $('.home').css({display:'none'});
-       $('.aboutMe').css({display:'none'});
-       $('#assignments1').css({display:'none'});
-       $('.skills').css({display:'none'});
-       $('#recentprojects').css({display:'none'});
-       $('.contact').css({display:'block'});
-   });
-*/
-    $(document).ready(() => {
-        // Show home section by default
-        $('.home').css({display: 'block'});
-
-        // Set up click handlers for navigation items
-        $('#navHome').on('click', () => {
-            $('.home').css({display: 'block'});
-            $('.aboutMe').css({display: 'none'});
-            $('#assignments1').css({display: 'none'});
-            $('.skills').css({display: 'none'});
-            $('#recentprojects').css({display: 'none'});
-            $('.contact').css({display: 'none'});
-        });
-        $('#navAboutMe').on('click', () => {
-            $('.home').css({display: 'none'});
-            $('.aboutMe').css({display: 'block'});
-            $('#assignments1').css({display: 'none'});
-            $('.skills').css({display: 'none'});
-            $('#recentprojects').css({display: 'none'});
-            $('.contact').css({display: 'none'});
-        });
-        $('#navAssignments').on('click', () => {
-            $('.home').css({display: 'none'});
-            $('.aboutMe').css({display: 'none'});
-            $('#assignments1').css({display: 'block'});
-            $('.skills').css({display: 'none'});
-            $('#recentprojects').css({display: 'none'});
-            $('.contact').css({display: 'none'});
-        });
-        $('#navSkilla').on('click', () => {
-            $('.home').css({display: 'none'});
-            $('.aboutMe').css({display: 'none'});
-            $('#assignments1').css({display: 'none'});
-            $('.skills').css({display: 'block'});
-            $('#recentprojects').css({display: 'none'});
-            $('.contact').css({display: 'none'});
-        });
-        $('#navProjects').on('click', () => {
-            $('.home').css({display: 'none'});
-            $('.aboutMe').css({display: 'none'});
-            $('#assignments1').css({display: 'none'});
-            $('.skills').css({display: 'none'});
-            $('#recentprojects').css({display: 'block'});
-            $('.contact').css({display: 'none'});
-        });
-        $('#navContact').on('click', () => {
-            $('.home').css({display: 'none'});
-            $('.aboutMe').css({display: 'none'});
-            $('#assignments1').css({display: 'none'});
-            $('.skills').css({display: 'none'});
-            $('#recentprojects').css({display: 'none'});
-            $('.contact').css({display: 'block'});
-        });
+ document.getElementById('navHome').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        const homeSection = document.querySelector('.home');
+        homeSection.scrollIntoView({ behavior: 'smooth' });
     });
 
+    document.getElementById('navAboutMe').addEventListener('click', function(event) {
+        event.preventDefault();
+        const aboutSection = document.querySelector('.aboutMe');
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('navAssignments').addEventListener('click', function(event) {
+        event.preventDefault();
+        const assignmentsSection = document.getElementById('assignments1');
+        assignmentsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('navProjects').addEventListener('click', function(event) {
+        event.preventDefault();
+        const projectsSection = document.getElementById('recentprojects');
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('navSkills').addEventListener('click', function(event) {
+        event.preventDefault();
+        const skillsSection = document.querySelector('.skills');
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('navContact').addEventListener('click', function(event) {
+        event.preventDefault();
+        const contactSection = document.querySelector('.contact');
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    });
 
 </script>
 
