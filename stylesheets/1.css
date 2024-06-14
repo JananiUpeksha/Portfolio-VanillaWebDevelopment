@@ -382,9 +382,9 @@ header>section>nav>ul>li>a:hover {
     /* Adjustments for other elements as needed */
     .pdetails>img {
         /* Adjust styles for profile photo */
-        width: 300px;
+        width: 280px;
         top: 140px;
-        left: 90px;
+        left: 60px;
         height: auto;
     }
 

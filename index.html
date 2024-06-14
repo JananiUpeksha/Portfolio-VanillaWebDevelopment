@@ -145,7 +145,7 @@
     <h1 id="main">Assignments</h1>
     <section id="assignments">
         <div class="card">
-            <img src="assets/A1.png" alt="Placeholder Image">
+            <img src="assets/A1.png" alt="Placeholder Image" >
             <div class="info">
                 <h1>Assignment01</h1>
                 <p>Sitemap, Mockups & wireframe for portfolio.</p>
@@ -431,7 +431,7 @@
         </div>
     </div>
     <!-- Wrapping #details inside another container -->
-    <div id="details-container">
+    <!--<div id="details-container" onsubmit="sendEmail(); return false;">
         <div id="details">
             <div>
                 <label for="first-name">First Name</label> <br>
@@ -455,7 +455,30 @@
             </div>
             <button id="send-btn">Send It</button>
         </div>
-    </div>
+    </div>-->
+    <form id="details" onsubmit="sendEmail(); return false;">
+        <div>
+            <label for="first-name">First Name</label><br>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div>
+            <label for="second-name">Second Name</label><br>
+            <input type="text" id="second-name" name="second-name">
+        </div>
+        <div id="msg">
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="8" cols="60" required></textarea>
+        </div>
+        <div>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="contact">Contact No</label><br>
+            <input type="text" id="no" name="contact">
+        </div>
+        <button type="submit" id="send-btn">Send It</button>
+    </form>
     <!------------Footer---------->
     <footer>
         <div class="images-container">
@@ -493,6 +516,63 @@
     AOS.init();
 </script>
 <script src="js.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<!--<script>
+    function sendEmail() {
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "janani0208perera@gmail.com",
+            Password : "F3036151E8E6C415E621052A5406A18C48FB",
+            To : 'janani0208perera@gmail.com',
+            From : "janani0208perera@gmail.com",
+            Subject : "Contact form Enquiry",
+            Body : "And this is the body"
+        }).then(
+            message => alert(message)
+        );
+    }
+</script>-->
+<script>
+    const form = document.querySelector("form");
+    const firstname = document.getElementById("first-name");
+    const secondname = document.getElementById("second-name");
+    const contact = document.getElementById("no");
+    const mail = document.getElementById("email");
+    const message = document.getElementById("message");
+
+    function sendEmail() {
+        const bodyMsg = `
+                First Name: ${firstname.value} <br>
+                Second Name: ${secondname.value} <br>
+                Contact: ${contact.value} <br>
+                E-mail: ${mail.value} <br>
+                Message: ${message.value}
+            `;
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "janani0208perera@gmail.com",
+            Password: "F3036151E8E6C415E621052A5406A18C48FB",
+            To: 'janani0208perera@gmail.com',
+            From: mail.value,
+            Subject: "Contact form Enquiry",
+            Body: bodyMsg
+        }).then(
+            message => {
+                alert("Mail sent successfully!");
+                form.reset(); // Reset the form after successful submission
+            }
+        ).catch(
+            error => alert("Failed to send mail: " + error)
+        );
+    }
+
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        sendEmail();
+    });
+</script>
+
 <script>
  document.getElementById('navHome').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
